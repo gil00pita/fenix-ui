@@ -3,7 +3,7 @@ import { Item, MenuItemProps as RcMenuItemProps } from 'rc-menu';
 import toArray from 'rc-util/lib/Children/toArray';
 import classNames from 'classnames';
 import MenuContext, { MenuContextProps } from './MenuContext';
-import Tooltip, { TooltipProps } from '../tooltip';
+import Tooltip, { TooltipProps } from '../Atoms/Tooltip';
 import { SiderContext, SiderContextProps } from '../layout/Sider';
 import { isValidElement } from '../_util/reactNode';
 

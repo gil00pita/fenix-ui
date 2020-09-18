@@ -5,6 +5,7 @@ import { ConfigContext } from '../../config-provider';
 import Avatar from './Avatar';
 import Popover from '../../popover';
 import StyledAvatarGroup from './AvatarGroup.styles';
+import { Text } from '../Typography'
 
 export interface GroupProps {
   className?: string;
@@ -12,13 +13,16 @@ export interface GroupProps {
   style?: React.CSSProperties;
   prefixCls?: string;
   maxCount?: number;
+  maxCountSize?: number;
+  maxCountBorderWidth?: number;
+  maxCountBorderColor?: string;
   maxStyle?: React.CSSProperties;
   maxPopoverPlacement?: 'top' | 'bottom';
 }
 
 const Group: React.FC<GroupProps> = props => {
   const { direction } = React.useContext(ConfigContext);
-  const { className = '', maxCount, maxStyle } = props;
+  const { className = '', maxCountSize, maxCountBorderColor, maxCountBorderWidth, maxCount, maxStyle } = props;
 
   const { children, maxPopoverPlacement = 'top' } = props;
   const childrenWithProps = toArray(children);
@@ -28,12 +32,20 @@ const Group: React.FC<GroupProps> = props => {
     const childrenHidden = childrenWithProps.slice(maxCount, numOfChildren);
     childrenShow.push(
       <Popover
-        content={childrenHidden}
+        title={childrenHidden}
         trigger="hover"
         placement={maxPopoverPlacement}
-        overlayClassName={`${prefixCls}-popover`}
       >
-        <Avatar style={maxStyle}>{`+${numOfChildren - maxCount}`}</Avatar>
+        <Avatar
+          size={maxCountSize}
+          borderWidth={maxCountBorderWidth}
+          borderColor={maxCountBorderColor}
+          style={maxStyle}
+        >
+          <Text variation="body1" avoidSelect>
+            {`+${numOfChildren - maxCount}`}
+          </Text>
+        </Avatar>
       </Popover>,
     );
     return (
@@ -47,6 +59,11 @@ const Group: React.FC<GroupProps> = props => {
       {children}
     </StyledAvatarGroup>
   );
+};
+
+Group.defaultProps = {
+  maxCountBorderWidth: 2,
+  maxCountBorderColor: '#fff',
 };
 
 export default Group;

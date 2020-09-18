@@ -1,5 +1,3 @@
-import Log from '@fenix-ui/utils/lib/logger';
-
 import amber from './amber';
 import blue from './blue';
 import brand from './brand';

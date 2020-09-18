@@ -3,7 +3,7 @@ import RcSlider from 'rc-slider/lib/Slider';
 import RcRange from 'rc-slider/lib/Range';
 import RcHandle from 'rc-slider/lib/Handle';
 import classNames from 'classnames';
-import { TooltipPlacement } from '../tooltip';
+import { TooltipPlacement } from '../Atoms/Tooltip';
 import SliderTooltip from './SliderTooltip';
 import { ConfigContext } from '../config-provider';
 

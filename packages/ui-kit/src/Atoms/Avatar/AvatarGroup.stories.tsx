@@ -3,15 +3,17 @@ import React from "react";
 import { withKnobs, text, boolean, number, color, select } from "@storybook/addon-knobs";
 import AvatarGroup from './Group';
 import Avatar from './Avatar';
+import Tooltip from '../Tooltip';
 import { AbTesting } from '@fenix-ui/icons/mdc';
+import { User } from '@fenix-ui/icons/aiOutline';
 
 export default {
-  title: "Atoms/Avatar/Group",
+  title: "Atoms/Avatar/Avatar Group",
   decorators: [withKnobs]
 };
 
 
-export const ImageAvatarGroup  = () => {
+export const ImageAvatarGroup = () => {
   const groupId = 'Avatar settings';
 
   const shapeLabel = 'Shape?';
@@ -73,42 +75,42 @@ export const ImageAvatarGroup  = () => {
 
   return (
     <React.Fragment>
-    <AvatarGroup>
-    <Avatar
-      alt="Avatar"
-      src="https://i.pinimg.com/originals/9a/89/02/9a8902b59973088909eb6fa34bb0659b.png"
-      blur={blurValue}
-      size={sizeValue}
-      shape={shapeValue}
-      bgColor={bgColorValue}
-      borderColor={borderColorValue}
-      borderWidth={strokeValue}
-      borderRadius={radiusValue}
-    />
-    <Avatar
-      alt="Avatar"
-      src="https://pyxis.nymag.com/v1/imgs/630/6e0/eb215ad90cd826b9e57ff505f54c5c7228-07-avatar.rsquare.w700.jpg"
-      blur={blurValue}
-      size={sizeValue}
-      shape={shapeValue}
-      bgColor={bgColorValue}
-      borderColor={borderColorValue}
-      borderWidth={strokeValue}
-      borderRadius={radiusValue}
-    />
-    <Avatar
-      alt="Avatar"
-      src="https://lwlies.com/wp-content/uploads/2017/04/avatar-2009-1108x0-c-default.jpg"
-      blur={blurValue}
-      size={sizeValue}
-      shape={shapeValue}
-      bgColor={bgColorValue}
-      borderColor={borderColorValue}
-      borderWidth={strokeValue}
-      borderRadius={radiusValue}
-    />
-    </AvatarGroup>
-  </React.Fragment>
+      <AvatarGroup>
+        <Avatar
+          alt="Avatar"
+          src="https://i.pinimg.com/originals/9a/89/02/9a8902b59973088909eb6fa34bb0659b.png"
+          blur={blurValue}
+          size={sizeValue}
+          shape={shapeValue}
+          bgColor={bgColorValue}
+          borderColor={borderColorValue}
+          borderWidth={strokeValue}
+          borderRadius={radiusValue}
+        />
+        <Avatar
+          alt="Avatar"
+          src="https://pyxis.nymag.com/v1/imgs/630/6e0/eb215ad90cd826b9e57ff505f54c5c7228-07-avatar.rsquare.w700.jpg"
+          blur={blurValue}
+          size={sizeValue}
+          shape={shapeValue}
+          bgColor={bgColorValue}
+          borderColor={borderColorValue}
+          borderWidth={strokeValue}
+          borderRadius={radiusValue}
+        />
+        <Avatar
+          alt="Avatar"
+          src="https://lwlies.com/wp-content/uploads/2017/04/avatar-2009-1108x0-c-default.jpg"
+          blur={blurValue}
+          size={sizeValue}
+          shape={shapeValue}
+          bgColor={bgColorValue}
+          borderColor={borderColorValue}
+          borderWidth={strokeValue}
+          borderRadius={radiusValue}
+        />
+      </AvatarGroup>
+    </React.Fragment>
   );
 };
 
@@ -191,7 +193,7 @@ export const IconAvatarGroup = () => {
         borderRadius={radiusValue}
       />
       <Avatar
-      alt="Avatar"
+        alt="Avatar"
         src={srcValue}
         blur={blurValue}
         size={sizeValue}
@@ -203,7 +205,7 @@ export const IconAvatarGroup = () => {
         borderRadius={radiusValue}
       />
       <Avatar
-      alt="Avatar"
+        alt="Avatar"
         src={srcValue}
         blur={blurValue}
         size={sizeValue}
@@ -214,6 +216,31 @@ export const IconAvatarGroup = () => {
         borderWidth={strokeValue}
         borderRadius={radiusValue}
       />
-  </AvatarGroup>
+    </AvatarGroup>
+  )
+};
+
+export const IconAvatarGroupTooltip = () => {
+  return (
+    <AvatarGroup>
+      <Avatar size={64} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" borderWidth={2}/>
+      <Avatar size={64} bgColor='#f56a00' borderWidth={2} >K</Avatar>
+      <Tooltip title={(
+        <Avatar size={64}  bgColor='#87d068' borderWidth={2} icon={<User />} />
+      )} placement="bottom">
+      <Avatar size={64} bgColor='#1890ff' borderWidth={2} icon={<User />} />
+      </Tooltip>
+    </AvatarGroup>
+  )
+};
+
+export const IconAvatarGroupMaxTooltip = () => {
+  return (
+    <AvatarGroup maxCount={2} maxCountSize={64} >
+      <Avatar size={64} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" borderWidth={2} />
+      <Avatar size={64} bgColor='#f56a00' borderWidth={2}>K</Avatar>
+      <Avatar size={64} bgColor='#87d068' borderWidth={2} icon={<User />} />
+      <Avatar size={64} bgColor='#1890ff' borderWidth={2} icon={<User />} />
+    </AvatarGroup>
   )
 };

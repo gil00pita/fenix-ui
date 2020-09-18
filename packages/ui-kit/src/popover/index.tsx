@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Tooltip, { AbstractTooltipProps, TooltipPlacement } from '../tooltip';
+import Tooltip, { AbstractTooltipProps, TooltipPlacement } from '../Atoms/Tooltip';
 import { ConfigContext } from '../config-provider';
 import { getRenderPropValue, RenderFunction } from '../_util/getRenderPropValue';
 

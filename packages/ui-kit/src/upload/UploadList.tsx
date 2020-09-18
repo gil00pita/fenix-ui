@@ -12,7 +12,7 @@ import DownloadOutlined from '@ant-design/icons/DownloadOutlined';
 import { cloneElement, isValidElement } from '../_util/reactNode';
 import { UploadListProps, UploadFile, UploadListType } from './interface';
 import { previewImage, isImageUrl } from './utils';
-import Tooltip from '../tooltip';
+import Tooltip from '../Atoms/Tooltip';
 import Progress from '../progress';
 import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
 import Button, { ButtonProps } from '../button';

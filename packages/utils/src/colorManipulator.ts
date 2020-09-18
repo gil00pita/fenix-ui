@@ -90,6 +90,17 @@ export function hslToRgb(color) {
   return recomposeColor({ type, values: rgb });
 }
 
+
+/**
+ * Converts a color from CSS hsl format to CSS hex format.
+ *
+ * @param {string} color - hsl color, i.e. hsl(n, n, n)
+ * @returns {string} A CSS rgb color string, i.e. #nnnnnn
+ */
+export function hslToHex(color) {
+  return rgbToHex(hslToRgb(color));
+}
+
 /**
  * Returns an object with the type and values of a color.
  *

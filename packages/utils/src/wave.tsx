@@ -2,7 +2,7 @@ import * as React from 'react';
 import { findDOMNode } from 'react-dom';
 import TransitionEvents from '@ant-design/css-animation/lib/Event';
 import raf from './raf';
-import { ConfigConsumer, ConfigConsumerProps, CSPConfig, ConfigContext } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps, CSPConfig, ConfigContext } from '@fenix-ui/ui-kit/src/Atoms/Providers/ConfigProvider';
 
 let styleForPesudo: HTMLStyleElement | null;
 

@@ -1,5 +1,5 @@
 import { getColor } from '../Palette';
-import { fade, darken, lighten } from '@fenix-ui/utils/lib/colorManipulator';
+import { fade, darken, lighten, hslToHex } from '@fenix-ui/utils/lib/colorManipulator';
 
 const fontSizeBase = 14;
 
@@ -44,22 +44,23 @@ const background = {
   // list items or table cells.
   itemActiveBg: colors.primaryStates.primary1,
   itemHoverBg: '#f5f5f5',
-  backgroundColorLight: 'hsl(0, 0, 98%)', // background of header and selected item
-  backgroundColorBase: 'hsl(0, 0, 96%)', // Default grey background color
+  backgroundColorLight: hslToHex('hsl(0, 0%, 98%)'), // background of header and selected item
+  backgroundColorBase: hslToHex('hsl(0, 0%, 96%)'), // Default grey background color
   // Disabled states
-  disabledBg: 'hsl(0, 0, 96%)', // same as backgroundColorBase
+  disabledBg: hslToHex('hsl(0, 0%, 96%)'), // same as backgroundColorBase
 };
 
 // Border color
 const border = {
-  borderColorBase: 'hsl(0, 0, 85%)', // base border outline a component
-  borderColorSplit: 'hsl(0, 0, 94%)', // split border inside a component
+  borderColorBase: hslToHex('hsl(0, 0%, 85%)'), // base border outline a component
+  borderColorSplit: hslToHex('hsl(0, 0%, 94%)'), // split border inside a component
   borderColorInverse: colors.white,
   borderWidthBase: 1, // width of the border for a component
   borderStyleBase: 'solid', // style of a components border
-  popoverCustomizeBorderColor: 'hsl(0, 0, 94%)',
+  popoverCustomizeBorderColor: hslToHex('hsl(0, 0%, 94%)'),
   borderRadiusBase: 2,
   borderRadiusSm: 2,
+  borderRadiusLg: 3,
 };
 
 // Outline
@@ -77,6 +78,7 @@ const font = {
     'Noto Color Emoji'`,
   codeFamily: `'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace`,
   textColor: fade(colors.black, 0.65),
+  textColorDisabled: fade(colors.black, 0.3),
   textColorSecondary: fade(colors.black, 0.45),
   textColorInverse: colors.white,
   iconColor: 'inherit',
@@ -86,8 +88,11 @@ const font = {
   textColorDark: fade(colors.white, 0.85),
   textColorSecondaryDark: fade(colors.white, 0.65),
   textSelectionBg: colors.primary,
+  textDecorationBase: 'none',
   fontVariantBase: 'tabular-nums',
   fontFeatureSettingsBase: 'tnum',
+  fontWeightBase: 400,
+  fontStyleBase: 'normal',
   fontSizeBase: fontSizeBase,
   fontSizeLg: fontSizeBase + 2,
   fontSizeSm: fontSizeBase - 2,
@@ -95,8 +100,38 @@ const font = {
   heading2Size: Math.ceil(fontSizeBase * 2.14),
   heading3Size: Math.ceil(fontSizeBase * 1.71),
   heading4Size: Math.ceil(fontSizeBase * 1.42),
+  heading5Size: Math.ceil(fontSizeBase * 1.13),
+  heading6Size: Math.ceil(fontSizeBase * 0.84),
   // https://github.com/ant-design/ant-design/issues/20210
   lineHeightBase: 1.5715,
+  body1Size: 14,
+  body1LineHeight: 1.5,
+  body1LetterSpacing: '0.00938em',
+  body2Size: 12,
+  body2LineHeight: 1.43,
+  body2LetterSpacing: '0.01071em',
+  buttonSize: 14,
+  buttonLineHeight: 1.75,
+  buttonLetterSpacing: '0.02857em',
+  captionSize: 10,
+  captionLineHeight: 1.33,
+  captionLetterSpacing: '0.03333em',
+  overlineSize: 12,
+  overlineLineHeight: 1.86,
+  overlineLetterSpacing: '0.08333em',
+  subtitle1Size: 14,
+  subtitle1LineHeight: 1.75,
+  subtitle1LetterSpacing: '0.00938em',
+  subtitle2Size: 12,
+  subtitle2LineHeight: 1.57,
+  subtitle2LetterSpacing: '0.00714em',
+};
+
+// Typography
+const typography = {
+  typographyTitleFontWeight: 600,
+  typographyTitleMarginTop: '1.2em',
+  typographyTitleMarginBottom: '0.5em',
 };
 
 // vertical paddings
@@ -111,17 +146,20 @@ const padding = {
   controlPaddingHorizontalSm: 8, // same as padding-xs
 };
 
-  // vertical margins
+// height rules
+const height = {
+  heightBase: 32,
+  heightLg: 40,
+  heightSm: 24,
+};
+
+// vertical margins
 const margin = {
   marginLg: 24, // containers
   marginMd: 16, // small containers and buttons
   marginSm: 12, // Form controls and items
   marginXs: 8, // small items
   marginXss: 4, // more small
-  // height rules
-  heightBase: 32,
-  heightLg: 40,
-  heightSm: 24,
 };
 
 // LINK
@@ -160,7 +198,7 @@ const animation = {
 const shadow = {
   shadowColor: 'rgba(0, 0, 0, 0.15)',
   shadowColorInverse: background.componentBackground,
-  boxShadowBase: shadow-2,
+  boxShadowBase: `0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08)`, //Same as shadow2
   shadow1Up: `0 -6px 16px -8px rgba(0, 0, 0, 0.08), 0 -9px 28px 0 rgba(0, 0, 0, 0.05),
     0 -12px 48px 16px rgba(0, 0, 0, 0.03)`,
   shadow1Down: `0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05),
@@ -177,41 +215,52 @@ const shadow = {
 const button = {
   btnFontWeight: '400',
   btnBorderRadiusBase: border.borderRadiusBase,
-  btnBorderRadiusSm: border.borderRadiusBase,
+  btnBorderRadiusSm: border.borderRadiusSm,
+  btnBorderRadiusLg: border.borderRadiusLg,
   btnBorderWidth: border.borderWidthBase,
   btnBorderStyle: border.borderStyleBase,
   btnShadow: '0 2px 0 rgba(0, 0, 0, 0.015)',
   btnPrimaryShadow: '0 2px 0 rgba(0, 0, 0, 0.045)',
-  btnTextShadow: '0 -1px 0 rgba(0, 0, 0, 0.12)',
-  // primary
-  btnPrimaryColor: colors.white,
-  btnPrimaryBg: colors.primary,
+  btnTextShadow: '0 1px 0 rgba(0, 0, 0, 0.08)',
+  // raised
+  btnRaisedColor: colors.white,
+  btnRaisedBg: colors.primary,
+  btnRaisedBgDisabled: colors.disabled,
+  btnRaisedBgHover: darken(colors.primary, 0.14),
+  btnRaisedBgActive: lighten(colors.primary, 0.14),
+  // dashed
+  btnDashedBgBorderStyle: 'dashed',
   // default
   btnDefaultColor: font.textColor,
+  btnDefaultHover: colors.primary,
+  btnDefaultActive: lighten(colors.primary, 0.14),
   btnDefaultBg: background.componentBackground,
   btnDefaultBorder: border.borderColorBase,
-  // danger
-  btnDangerColor: colors.white,
-  btnDangerBg: colors.error,
-  btnDangerBorder: colors.error,
   // disabled
   btnDisableColor: colors.disabled,
   btnDisableBg: background.disabledBg,
   btnDisableBorder: border.borderColorBase,
   // ghost
-  btnDefaultGhostColor: background.componentBackground,
+  btnDefaultGhostColor: font.textColor,
   btnDefaultGhostBg: 'transparent',
-  btnDefaultGhostBorder: background.componentBackground,
-  // sizes & padding
+  btnDefaultGhostBgHover: fade(font.textColor, 0.2),
+  btnDefaultGhostBgActive: fade(font.textColor, 0.16),
+  btnDefaultGhostBorder: 'transparent',
+  // sizes
+  btnFontSizeBase: fontSizeBase,
   btnFontSizeLg: font.fontSizeLg,
   btnFontSizeSm: fontSizeBase,
+  // padding
   btnPaddingHorizontalBase: padding.paddingMd - 1,
   btnPaddingHorizontalLg: padding.paddingMd - 1,
   btnPaddingHorizontalSm: padding.paddingXs - 1,
-  // default margin
-  btnHeightBase: margin.heightBase,
-  btnHeightLg: margin.heightLg,
-  btnHeightSm: margin.heightSm,
+  btnPaddingVerticalSm: 0,
+  btnPaddingVerticalMd: padding.paddingXss,
+  btnPaddingVerticalLg: padding.paddingXss + 2,
+  // height
+  btnHeightBase: height.heightBase,
+  btnHeightLg: height.heightLg,
+  btnHeightSm: height.heightSm,
   // circle margin
   btnCircleSize: margin.heightBase,
   btnCircleSizeLg: margin.heightLg,
@@ -395,7 +444,7 @@ const input = {
   ),
   inputPaddingVerticalLg: Math.ceil((margin.heightLg - font.fontSizeLg * font.lineHeightBase) / 2 * 10) /
     10 - border.borderWidthBase,
-  inputPlaceholderColor: 'hsl(0, 0, 0.75)',
+  inputPlaceholderColor: hslToHex('hsl(0, 0%, 0.75)'),
   inputColor: font.textColor,
   inputIconColor: font.textColor, // same as inputColor
   inputBorderColor: border.borderColorBase,
@@ -992,13 +1041,6 @@ const timeline = {
   timelineDotColor: colors.primary,
   timelineDotBg: background.componentBackground,
   timelineItemPaddingBottom: 20,
-};
-
-// Typography
-const typography = {
-  typographyTitleFontWeight: 600,
-  typographyTitleMarginTop: '1.2em',
-  typographyTitleMarginBottom: '0.5em',
 };
 
 // Upload

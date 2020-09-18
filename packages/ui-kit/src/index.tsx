@@ -56,7 +56,7 @@ export { default as DatePicker } from './date-picker';
 
 export { default as Descriptions } from './descriptions';
 
-export { default as Divider } from './divider';
+export { default as Divider } from './Atoms/Divider';
 
 export { default as Dropdown } from './dropdown';
 
@@ -136,7 +136,7 @@ export { default as TimePicker } from './time-picker';
 
 export { default as Timeline } from './timeline';
 
-export { default as Tooltip } from './tooltip';
+export { default as Tooltip } from './Atoms/Tooltip';
 
 export { default as Typography } from './typography';
 

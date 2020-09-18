@@ -139,12 +139,15 @@ Support for Yarn Workspaces was added by:
 - [x] Avatar
 - [ ] Badge
 - [ ] Checkbox
-- [ ] Divider
+- [x] Divider
 - [ ] Icon
 - [ ] Progress
 - [ ] Skeleton
-- [ ] Tooltip
-- [ ] Typography
+- [x] Tooltip
+- [x] Typography
+- [x] Palette
+- [x] Themes
+- [x] GlobalStyles
 
 ### Molecules
 

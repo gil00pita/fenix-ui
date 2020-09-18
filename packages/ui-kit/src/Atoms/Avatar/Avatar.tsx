@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 
-import { ConfigContext } from '../../config-provider';
+import { ConfigContext } from '../Providers/ConfigProvider';
 import devWarning from '@fenix-ui/utils/lib/devWarning';
 import { composeRef } from '@fenix-ui/utils/lib/ref';
 import StyledAvatar, { StyledAvatarStringContainer, StyledAvatarIconContainer, StyledAvatarImageContainer, StyledAvatarImage } from './Avatar.styles';
@@ -49,8 +49,6 @@ const InternalAvatar: React.ForwardRefRenderFunction<unknown, AvatarProps> = (pr
 
   let lastChildrenWidth: number;
   let lastNodeWidth: number;
-
-  const { getPrefixCls } = React.useContext(ConfigContext);
 
   const setScaleParam = () => {
     if (!avatarChildrenRef.current || !avatarNodeRef.current) {
@@ -206,6 +204,8 @@ const Avatar = React.forwardRef<unknown, AvatarProps>(InternalAvatar);
 Avatar.displayName = 'Avatar';
 
 Avatar.defaultProps = {
+  borderWidth: 0,
+  borderColor: '#fff',
   shape: 'circle' as AvatarProps['shape'],
   size: 'default' as AvatarProps['size'],
 };

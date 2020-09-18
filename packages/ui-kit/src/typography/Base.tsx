@@ -14,7 +14,7 @@ import devWarning from '../_util/devWarning';
 import TransButton from '../_util/transButton';
 import raf from '../_util/raf';
 import isStyleSupport from '../_util/styleChecker';
-import Tooltip from '../tooltip';
+import Tooltip from '../Atoms/Tooltip';
 import Typography, { TypographyProps } from './Typography';
 import Editable from './Editable';
 import measure from './util';

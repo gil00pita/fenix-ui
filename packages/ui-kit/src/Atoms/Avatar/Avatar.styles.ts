@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/indent */
 import styled, { DefaultTheme } from 'styled-components';
-import reset from '../Reset';
+import reset from '../GlobalStyles/Reset';
 
 interface Styles {
   size?: string;
@@ -27,7 +27,7 @@ const borderRadius= ({ shape, borderRadius, theme }: Styles) => {
   return finalShape;
 };
 
-const variantSize= ({ size, theme }: Styles) => {
+const variantSize = ({ size, theme }: Styles) => {
   let finalSize;
   switch (size) {
     case 'small':
@@ -41,6 +41,7 @@ const variantSize= ({ size, theme }: Styles) => {
 };
 
 const borderWidthValue = ({ borderWidth, theme }: Styles) => {
+  console.log(borderWidth)
   return `${borderWidth}px` || `${theme.avatar.avatarBorderWidth}px`;
 };
 
@@ -57,17 +58,17 @@ const blurValue = ({ blur, theme }: Styles) => {
 };
 
 export const StyledAvatarStringContainer = styled.div`
-  position: absolute;
   left: 50%;
+  position: absolute;
   transform-origin: 0 center;
 `;
 
 export const StyledAvatarIconContainer = styled.div`
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   font-size: ${({ theme }) => theme.font.fontSize};
   height: 100%;
+  justify-content: center;
 `;
 
 export const StyledAvatarImageContainer = styled.div`
@@ -75,28 +76,29 @@ export const StyledAvatarImageContainer = styled.div`
 `;
 
 export const StyledAvatarImage = styled.img`
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(${(props: Styles) => blurValue(props)});
+  display: block;
+  filter: blur(${(props: Styles) => blurValue(props)});
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 `;
 
 const StyledAvatar = styled.div`
   ${reset}
+  align-items: center;
+  background-color: ${(props: Styles) => bgColorValue(props)};
   border: ${(props: Styles) => borderWidthValue(props)} solid ${(props: Styles) => borderRadiusValue(props)};
   border-radius: ${(props: Styles) => borderRadius(props)};
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
   color: ${({ theme }) => theme.avatar.avatarColor};
-  white-space: nowrap;
-  text-align: center;
-  vertical-align: middle;
-  background-color: ${(props: Styles) => bgColorValue(props)};
-  width: ${(props: Styles) => variantSize(props)};
+  display: flex;
   height: ${(props: Styles) => variantSize(props)};
+  justify-content: center;
   line-height: ${(props: Styles) => variantSize(props)};
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: ${(props: Styles) => variantSize(props)};
 `;
 
 export default StyledAvatar;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Tooltip, { TooltipProps } from '../tooltip';
+import Tooltip, { TooltipProps } from '../Atoms/Tooltip';
 
 function useCombinedRefs(
   ...refs: Array<React.MutableRefObject<unknown> | ((instance: unknown) => void) | null>

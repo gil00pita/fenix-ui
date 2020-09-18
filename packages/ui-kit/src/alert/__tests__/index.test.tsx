@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Alert from '..';
-import Tooltip from '../../tooltip';
+import Tooltip from '../../Atoms/Tooltip';
 import Popconfirm from '../../popconfirm';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { sleep } from '../../../tests/utils';

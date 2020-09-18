@@ -2,7 +2,7 @@ import * as React from 'react';
 import classNames from 'classnames';
 import ExclamationCircleFilled from '@ant-design/icons/ExclamationCircleFilled';
 import KeyCode from 'rc-util/lib/KeyCode';
-import Tooltip, { AbstractTooltipProps } from '../tooltip';
+import Tooltip, { AbstractTooltipProps } from '../Atoms/Tooltip';
 import Button from '../button';
 import { LegacyButtonType, NativeButtonProps, convertLegacyProps } from '../button/button';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
