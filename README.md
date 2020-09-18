@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/gil00pita/fenix-ui">
-    <img width="200" src="assets/Logo-Vertical.png">
+    <img width="200" src="assets/Logo-Only.png">
   </a>
 </p>
 
@@ -35,7 +35,7 @@ An enterprise-class UI design language build with React UI library and Styled Co
 
 <p align="center">
   <a href="https://github.com/gil00pita/fenix-ui">
-    <img width="200" src="assets/Tecnologies.png">
+    <img width="100%" src="assets/Tecnologies.png">
   </a>
 </p>
 
