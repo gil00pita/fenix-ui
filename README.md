@@ -10,31 +10,12 @@
 An enterprise-class UI design language build with React UI library and Styled Components.
 </div>
 
-## Built with
-<p align="center">
-  <a href="https://github.com/gil00pita/fenix-ui">
-    <img width="200" src="assets/Tecnologies.png">
-  </a>
-</p>
-
-
-- ⚛️ Create React App 3 (React 16.8)
-- 📖 Storybook 5
-- 📖 Styled Components
-- 🐈 Yarn Workspaces
-- 🐉 Lerna 3
-
-## Features
-
-- ✨ Host Multiple CRA Apps, Component Libraries & Storybooks in one Monorepo
-- 🔥 Hot Reload all Apps, Components & Storybooks
-- 👨‍🔬 Test all workspaces with Eslint & Jest using one command
-
 ## Contents
 
+- [Contents](#contents)
 - [Built with](#built-with)
 - [Features](#features)
-- [Contents](#contents)
+- [Why?](#why)
 - [Setup](#setup)
   - [Pre-Requisites](#pre-requisites)
   - [Installation](#installation)
@@ -49,6 +30,29 @@ An enterprise-class UI design language build with React UI library and Styled Co
   - [Atoms](#atoms)
   - [Molecules](#molecules)
   - [Organisms](#organisms)
+
+## Built with
+
+<p align="center">
+  <a href="https://github.com/gil00pita/fenix-ui">
+    <img width="200" src="assets/Tecnologies.png">
+  </a>
+</p>
+
+- ⚛️ Create React App 3 (React 16.8)
+- 📖 Storybook 5
+- 📖 Styled Components
+- 🐈 Yarn Workspaces
+- 🐉 Lerna 3
+
+## Features
+
+- ✨ Host Multiple CRA Apps, Component Libraries & Storybooks in one Monorepo
+- 🔥 Hot Reload all Apps, Components & Storybooks
+- 👨‍🔬 Test all workspaces with Eslint & Jest using one command
+
+## Why?
+Tired of using UI Kits? If you are looking to use a fully customizable UI Kits without having to mess around and overriding their styles, this library is for you, built with styled components witch makes easy to override via props. Each component is carefully build with in mind of overriding theirs styles via props or via a single theme [file](https://github.com/gil00pita/fenix-ui/tree/master/packages/ui-kit/src/Atoms/Themes), please check the documentation or the storybook in order to see in more detail. We also added the possibility to add opensource icons libraries by including [react-icons](https://github.com/react-icons/react-icons#readme) library, just clone the libarary into `packages/icons-lib/icons/src` folder and add the library url on this [file](https://github.com/gil00pita/fenix-ui/blob/master/packages/icons-lib/icons/src/icons/index.js) after that just run the `make build-icons` script in order use icons. There is also a icon search to make you easier to find the icons, just run `make launch-icon-gallery` to open the gallery so you can lookup the icons you need.
 
 ## Setup
 
@@ -73,25 +77,7 @@ TODO
 
 ### Starting Project in Workspace
 
-From your project root type start command for desired app
-
-```bash
-yarn workspace @fenix-ui/app-single-comp start
-```
-
-All available `start` scripts
-
-```json
-"scripts": {
-    "start:app-ant-design": "yarn workspace @fenix-ui/app-ant-design-rewired start",
-    "start:app-multi": "yarn workspace @fenix-ui/app-multi-comps start",
-    "start:app-single": "yarn workspace @fenix-ui/app-single-comp start",
-    "start:app-ts": "yarn workspace @fenix-ui/app-typescript start",
-    "start:storybook": "yarn workspace @fenix-ui/storybook storybook",
-    "start:storybook-ts": "yarn workspace @fenix-ui/storybook-typescript storybook",
-    ...
-  }
-```
+TODO
 
 ### Starting The Storybook
 
