@@ -40,10 +40,10 @@ An enterprise-class UI design language build with React UI library and Styled Co
 </p>
 
 - ⚛️ Create React App 3 (React 16.8)
-- 📖 Storybook 5
 - 📖 Styled Components
-- 🐈 Yarn Workspaces
+- 📖 Storybook 5
 - 🐉 Lerna 3
+- 🐈 Yarn Workspaces
 
 ## Features
 
