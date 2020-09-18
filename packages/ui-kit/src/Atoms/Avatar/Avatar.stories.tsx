@@ -20,7 +20,7 @@ export const ImageAvatar  = () => {
     Circle: 'circle'
   };
 
-  const strokeLabel = 'Stroke Width';
+  const strokeLabel = 'Border Width';
   const strokeDefaultValue = 0;
   const strokeOptions = {
     range: true,
