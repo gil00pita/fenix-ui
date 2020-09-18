@@ -148,68 +148,68 @@ Support for Yarn Workspaces was added by:
 
 ### Atoms
 
-- [x] Avatar
-- [] Badge
-- [] Checkbox
-- [] Divider
-- [] Icon
-- [] Progress
-- [] Skeleton
-- [] Tooltip
-- [] Typography
+[x] Avatar
+[] Badge
+[] Checkbox
+[] Divider
+[] Icon
+[] Progress
+[] Skeleton
+[] Tooltip
+[] Typography
 
 ### Molecules
 
-- [] Breadcrumb
-- [x] Button
-- [] Charts
-- [] Input
-- [] InputNumber
-- [] PageHeader
-- [] Pagination
-- [] Radio
-- [] Slider
-- [] Steps
-- [] Switch
-- [] Tabs
-- [] Upload
+[] Breadcrumb
+[x] Button
+[] Charts
+[] Input
+[] InputNumber
+[] PageHeader
+[] Pagination
+[] Radio
+[] Slider
+[] Steps
+[] Switch
+[] Tabs
+[] Upload
 
 ### Organisms
 
-- [] Alert
-- [] AutoComplete
-- [] Calendar
-- [] Card
-- [] Carousel
-- [] Cascader
-- [] Collapse
-- [] Comment
-- [] DatePicker
-- [] Descriptions
-- [] Drawer
-- [] Dropdown Button
-- [] Dropdown Select
-- [] Empty Spaces
-- [] Form
-- [] Grid
-- [] Items Groups
-- [] Layout
-- [] List
-- [] Mentions Field
-- [] Menu
-- [] Message
-- [] Modal
-- [] Notification (Toasts)
-- [] Pop confirm
-- [] Popover
-- [] Rate
-- [] Result
-- [] Spin
-- [] Statistic (Stats)
-- [] Table
-- [] Tag
-- [] Timeline
-- [] TimePicker
-- [] Transfer
-- [] Tree
-- [] TreeSelect
+[] Alert
+[] AutoComplete
+[] Calendar
+[] Card
+[] Carousel
+[] Cascader
+[] Collapse
+[] Comment
+[] DatePicker
+[] Descriptions
+[] Drawer
+[] Dropdown Button
+[] Dropdown Select
+[] Empty Spaces
+[] Form
+[] Grid
+[] Items Groups
+[] Layout
+[] List
+[] Mentions Field
+[] Menu
+[] Message
+[] Modal
+[] Notification (Toasts)
+[] Pop confirm
+[] Popover
+[] Rate
+[] Result
+[] Spin
+[] Statistic (Stats)
+[] Table
+[] Tag
+[] Timeline
+[] TimePicker
+[] Transfer
+[] Tree
+[] TreeSelect
