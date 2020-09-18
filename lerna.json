@@ -1,0 +1,16 @@
+{
+  "useWorkspaces": true,
+  "packages": [
+    "packages/icons-lib/icons",
+    "packages/icons-lib/icon-gallery",
+    "packages/ui-kit",
+    "packages/utils",
+    "packages/storybook"
+  ],
+  "version": "1.0.0",
+  "command": {
+    "run": {
+      "npmClient": "yarn"
+    }
+  }
+}

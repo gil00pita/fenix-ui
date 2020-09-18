@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"name": "✨ root",
+			"path": ".."
+		},
+		{
+			"name": "📦 @fenix-ui/icon-gallery",
+			"path": "../packages/icons-lib/icon-gallery"
+		},
+		{
+			"name": "📦 @fenix-ui/icons",
+			"path": "../packages/icons-lib/icons"
+		},
+		{
+			"name": "📦 @fenix-ui/storybook",
+			"path": "../packages/storybook"
+		},
+		{
+			"name": "📦 @fenix-ui/ui-kit",
+			"path": "../packages/ui-kit"
+		},
+		{
+			"name": "📦 @fenix-ui/utils",
+			"path": "../packages/utils"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"jest.runAllTestsFirst": false,
+		"jest.autoEnable": false,
+		"jest.showCoverageOnLoad": false
+	}
+}

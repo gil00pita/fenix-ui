@@ -1,0 +1,10 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ],
+  "cSpell.words": [
+    "fenix"
+  ],
+  "git.ignoreLimitWarning": true,
+}

@@ -1,0 +1,59 @@
+{
+  "name": "@fenix-ui/icons",
+  "version": "1.0.0",
+  "description": "Fork of https://github.com/react-icons/react-icons a SVG React icons of popular icon packs using ES6 imports",
+  "author": "Gil Alvaro",
+  "contributors": [],
+  "license": "MIT",
+  "main": "lib",
+  "types": "./lib/esm/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "watch": "tsc -w -p tsconfig.json",
+    "build": "node scripts/build.js && yarn build-mjs && yarn build-cjs",
+    "prebuild": "node ../../../node_modules/copy/bin/cli.js ../../../README.md ./packages/icons-lib/icons && rimraf ./lib",
+    "build-mjs": "tsc && babel ./lib/esm -d ./lib/esm",
+    "build-cjs": "tsc -p ./tsconfig.commonjs.json",
+    "clean": "rimraf ./src/icons/MaterialDesign-SVG && rimraf ./src/icons/ant-design-icons"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:react-icons/react-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/react-icons/react-icons/issues"
+  },
+  "homepage": "https://github.com/react-icons/react-icons#readme",
+  "peerDependencies": {
+    "react": "16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@mdi/svg": "^5.5.55",
+    "@types/react": "^16.9.46",
+    "babel-eslint": "^10.1.0",
+    "camelcase": "^6.0.0",
+    "cheerio": "1.0.0-rc.3",
+    "copy": "^0.3.2",
+    "eslint": "^7.7.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "find-package": "^1.0.0",
+    "glob-promise": "^3.4.0",
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.5",
+    "renamer": "^2.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "camelcase": "^6.0.0"
+  }
+}

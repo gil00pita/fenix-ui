@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "antd": ["components/index.tsx"],
+      "antd/es/*": ["components/*"]
+    },
+    "strictNullChecks": true,
+    "target": "es6",
+    "skipLibCheck": true,
+    "types": [
+      "@types/node",
+      "@types/mocha",
+      "node",
+      "core-js",
+      "cypress",
+      "jest",
+      "webpack-env",
+      "requirejs",
+      "chance"
+    ]
+  },
+  "paths": {
+    "@fenix-ui/ui-kit/*" : ["./packages/ui-kit/src/*"],
+    "@fenix-ui/utils/lib/*" : ["./packages/utils/lib/*"],
+  },
+  "include": [
+    "./packages/ui-kit/src/**/*.tsx",
+    "./packages/ui-kit/src/**/*.ts",
+    "./packages/ui-kit/typings/**/*.ts",
+    "./packages/utils/src/**/*.tsx",
+    "./packages/utils/src/**/*.ts",
+    ],
+  "exclude": [
+    "./packages/icons-lib",
+    "**/node_modules/**",
+    "node_modules",
+    "lib",
+    "es"
+  ]
+}

@@ -1,0 +1,9 @@
+[submodule "packages/icons-lib/icons/src/icons/ant-design-icons"]
+	path = packages/icons-lib/icons/src/icons/ant-design-icons
+	url = https://github.com/ant-design/ant-design-icons.git
+[submodule "packages/icons-lib/icons/src/icons/flat-color-icons"]
+	path = packages/icons-lib/icons/src/icons/flat-color-icons
+	url = https://github.com/icons8/flat-color-icons.git
+[submodule "packages/icons-lib/icons/src/icons/MaterialDesign-SVG"]
+	path = packages/icons-lib/icons/src/icons/MaterialDesign-SVG
+	url = https://github.com/Templarian/MaterialDesign-SVG.git

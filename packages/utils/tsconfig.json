@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "noLib": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "lib",
+    "removeComments": true,
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "target": "es6",
+    "types": [
+      "@types/node",
+      "@types/mocha",
+      "node",
+      "core-js",
+      "jest",
+      "webpack-env"
+    ],
+  },
+  "exclude": [
+    "**/*.d.ts",
+    "lib",
+    "node_modules",
+    "./node_modules/**/*",
+    "typings",
+    "**/*.spec.ts",
+    "./src/*test.ts"
+  ],
+  "include": [
+    "./src/**/*",
+    "./__tests__/**/*"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["react-app", { "flow": false, "typescript": true }],
+    "env"
+  ],
+  "plugins": [
+      "transform-object-rest-spread",
+      "transform-react-jsx",
+      "@babel/plugin-transform-react-jsx"
+  ]
+}

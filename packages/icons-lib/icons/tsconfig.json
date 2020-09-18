@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib/esm",
+    "module": "es2015",
+    "target": "es5",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "jsx": "react",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "declaration": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "importHelpers": true,
+    "alwaysStrict": true,
+    "sourceMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "rootDir": "src",
+    "types": [
+      "@types/node",
+      "@types/mocha",
+      "node",
+      "core-js",
+      "jest",
+      "webpack-env"
+    ],
+  },
+  "include": [
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "src/icons",
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "name": "root",
+  "private": true,
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "jest --bail --findRelatedTests"
+    ],
+    "*.scss": "stylelint --syntax scss",
+    "*.css": "stylelint"
+  },
+  "scripts": {
+    "storybook": "yarn workspace @fenix-ui/storybook storybook",
+    "test": "lerna run lint",
+    "deploy": "lerna run deploy",
+    "lint-staged": "lint-staged || (yarn run pop-stash >> /dev/null && exit 1)",
+    "stash-unstaged": "git stash save -k 'pre-linting-stash' >> /dev/null",
+    "pop-stash": "git stash && git stash pop stash@{1} && git read-tree stash && git stash drop"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/icons-lib/icon-gallery",
+      "packages/icons-lib/icons",
+      "packages/ui-kit",
+      "packages/utils",
+      "packages/storybook"
+    ],
+    "nohoist": [
+      "**/babel-loader",
+      "**/babel-jest"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "7.7.0",
+    "rimraf": "3.0.2",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "husky": "^4.2.5",
+    "jest": "^26.4.0",
+    "jest-prop-type-error": "^1.1.0",
+    "lerna": "^3.22.1",
+    "ultra-runner": "3.5.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.2.0"
+  },
+  "dependencies": {
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "26.0.10",
+    "@types/node": "14.0.27",
+    "@types/react": "16.9.46",
+    "@types/react-dom": "16.9.8",
+    "customize-cra": "^1.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "3.9.7"
+  },
+  "peerDependency": {
+    "@typescript-eslint/eslint-plugin": "2.0.0",
+    "@typescript-eslint/parser": "2.0.0",
+    "@eslint": "6.0.0",
+    "@eslint-plugin-flowtype": "4.0.0",
+    "@eslint-plugin-react-hooks": "1.0.0",
+    "@tslint": "5.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD --exclude-dependents"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/setupTests.{js,jsx,ts,tsx}",
+      "!src/index.{js,jsx,ts,tsx}",
+      "!src/serviceWorker.{js,jsx,ts,tsx}",
+      "!src/**/*.(spec|test|stories).{js,jsx,ts,tsx}"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "airbnb",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "prettier/react",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "@typescript-eslint/no-explicit-any": [
+        "error"
+      ],
+      "@typescript-eslint/explicit-function-return-type": [
+        "error"
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".tsx"
+          ]
+        }
+      ]
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".ts",
+            ".tsx"
+          ]
+        }
+      }
+    }
+  }
+}
