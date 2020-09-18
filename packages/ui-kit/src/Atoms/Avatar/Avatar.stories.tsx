@@ -5,7 +5,7 @@ import Avatar from './Avatar';
 import { AbTesting } from '@fenix-ui/icons/mdc';
 
 export default {
-  title: "Atoms|Avatar",
+  title: "Atoms/Avatar",
   decorators: [withKnobs]
 };
 
