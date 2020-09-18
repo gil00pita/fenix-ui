@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/gil00pita/fenix-ui">
-    <img width="200" src="assets/Logo-Vertical.png">
+    <img width="200" src="assets/Logo-Only.png">
   </a>
 </p>
 
@@ -13,6 +13,12 @@ An enterprise-class UI design language build with React UI library and Styled Co
 ![Join us on Discord]()
 
 ## Built with
+<p align="center">
+  <a href="https://github.com/gil00pita/fenix-ui">
+    <img width="200" src="assets/Tecnologies.png">
+  </a>
+</p>
+
 
 - ⚛️ Create React App 3 (React 16.8)
 - 📖 Storybook 5
