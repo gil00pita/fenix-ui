@@ -1,8 +1,8 @@
-import * as React from './node_modules/react';
-import classNames from './node_modules/classnames';
-import { LiteralUnion } from '../_util/type';
-import { PresetColorType } from '../_util/colors';
-import { ConfigContext } from '../config-provider';
+import * as React from 'react';
+import classNames from 'classnames';
+import { LiteralUnion } from '@fenix-ui/utils/lib/type';
+import { PresetColorType } from '@fenix-ui/utils/lib/colors';
+import { ConfigContext } from '../Providers/ConfigProvider';
 import { isPresetColor } from './utils';
 
 type RibbonPlacement = 'start' | 'end';

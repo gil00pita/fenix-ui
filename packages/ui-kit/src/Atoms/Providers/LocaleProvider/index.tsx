@@ -2,14 +2,14 @@ import * as React from 'react';
 import { ValidateMessages } from 'rc-field-form/lib/interface';
 import devWarning from '@fenix-ui/utils/lib/devWarning';
 
-import { ModalLocale, changeConfirmLocale } from '../../../modal/locale';
-import { TransferLocale as TransferLocaleForEmpty } from '../../../empty';
-import { PaginationLocale } from '../../../pagination/Pagination';
-import { TableLocale } from '../../../table/interface';
-import { PopconfirmLocale } from '../../../popconfirm';
-import { UploadLocale } from '../../../upload/interface';
-import { TransferLocale } from '../../../transfer';
-import { PickerLocale as DatePickerLocale } from '../../../date-picker/generatePicker';
+import { ModalLocale, changeConfirmLocale } from '../../../Organisms/Modal/locale';
+import { TransferLocale as TransferLocaleForEmpty } from '../../../Molecules/EmptySpaces';
+import { PaginationLocale } from '../../../Molecules/Pagination/Pagination';
+import { TableLocale } from '../../../Organisms/Table/interface';
+import { PopconfirmLocale } from '../../../Organisms/Popconfirm';
+import { UploadLocale } from '../../../Organisms/Upload/interface';
+import { TransferLocale } from '../../../Organisms/Transfer';
+import { PickerLocale as DatePickerLocale } from '../../../Organisms/DatePicker/generatePicker';
 import LocaleContext from './context';
 
 export const ANT_MARK = 'internalMark';

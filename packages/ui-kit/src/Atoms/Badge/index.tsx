@@ -3,10 +3,10 @@ import Animate from 'rc-animate';
 import classNames from 'classnames';
 import ScrollNumber from './ScrollNumber';
 import Ribbon from './Ribbon';
-import { PresetColorType, PresetStatusColorType } from '../_util/colors';
-import { ConfigContext } from '../config-provider';
-import { LiteralUnion } from '../_util/type';
-import { cloneElement } from '../_util/reactNode';
+import { PresetColorType, PresetStatusColorType } from '@fenix-ui/utils/lib/colors';
+import { ConfigContext } from '../Providers/ConfigProvider';
+import { LiteralUnion } from '@fenix-ui/utils/lib/type';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 import { isPresetColor } from './utils';
 
 export { ScrollNumberProps } from './ScrollNumber';

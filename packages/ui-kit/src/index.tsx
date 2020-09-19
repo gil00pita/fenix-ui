@@ -16,9 +16,9 @@ if (
 }
 /* @remove-on-es-build-end */
 
-export { default as Affix } from './affix';
+export { default as Affix } from './Atoms/Affix';
 
-export { default as Anchor } from './anchor';
+export { default as Anchor } from './Molecules/Anchor';
 
 export { default as AutoComplete } from './auto-complete';
 
@@ -88,7 +88,7 @@ export { default as Statistic } from './statistic';
 
 export { default as notification } from './notification';
 
-export { default as PageHeader } from './page-header';
+export { default as PageHeader } from './Molecules/PageHeader';
 
 export { default as Pagination } from './pagination';
 

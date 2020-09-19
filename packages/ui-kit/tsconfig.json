@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "compileOnSave": true,
     "baseUrl": "./",
     "paths": {
       "antd": ["src/index.tsx"],
@@ -20,5 +19,5 @@
     "skipLibCheck": true,
   },
   "exclude": ["node_modules", "lib", "es"],
-  "include": ["typings", "src/*", "src/Atoms/Avatar"]
+  "include": ["typings", "src/*", "src/Atoms/Avatar", "src/Molecules/Anchor", "src/Atoms/Affix"]
 }

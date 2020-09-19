@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Empty from '../../../empty';
+import Empty from '../../../Molecules/EmptySpaces';
 import { ConfigConsumer, ConfigConsumerProps } from '.';
 
 const renderEmpty = (componentName?: string): React.ReactNode => (

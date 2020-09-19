@@ -136,71 +136,75 @@ Support for Yarn Workspaces was added by:
 
 ### Atoms
 
+- [-] Affix
 - [x] Avatar
-- [ ] Badge
-- [ ] Checkbox
+- [-] Badge
+- [-] Checkbox
 - [x] Divider
-- [ ] Icon
-- [ ] Progress
-- [ ] Skeleton
+- [x] Icons
+- [-] Progress
+- [-] Skeleton
 - [x] Tooltip
 - [x] Typography
 - [x] Palette
+- [-] Radio
 - [x] Themes
 - [x] GlobalStyles
+- [-] Switch
+- [-] Space
 
 ### Molecules
 
-- [ ] Breadcrumb
+- [-] Anchor
+- [-] Breadcrumb
+- [-] BackTop
 - [x] Button
-- [ ] Charts
-- [ ] Input
-- [ ] InputNumber
-- [ ] PageHeader
-- [ ] Pagination
-- [ ] Radio
-- [ ] Slider
-- [ ] Steps
-- [ ] Switch
-- [ ] Tabs
-- [ ] Upload
+- [-] Charts
+- [-] Empty Spaces
+- [-] Input
+- [-] InputNumber
+- [-] PageHeader
+- [-] Pagination
+- [-] Slider
+- [-] Steps
+- [-] Tabs
+- [-] Upload
+- [-] Grid
+- [-] Dropdown Button
+- [-] Dropdown Select
+- [-] Layout
+- [-] Tag
 
 ### Organisms
 
-- [ ] Alert
-- [ ] AutoComplete
-- [ ] Calendar
-- [ ] Card
-- [ ] Carousel
-- [ ] Cascader
-- [ ] Collapse
-- [ ] Comment
-- [ ] DatePicker
-- [ ] Descriptions
-- [ ] Drawer
-- [ ] Dropdown Button
-- [ ] Dropdown Select
-- [ ] Empty Spaces
-- [ ] Form
-- [ ] Grid
-- [ ] Items Groups
-- [ ] Layout
-- [ ] List
-- [ ] Mentions Field
-- [ ] Menu
-- [ ] Message
-- [ ] Modal
-- [ ] Notification (Toasts)
-- [ ] Pop confirm
-- [ ] Popover
-- [ ] Rate
-- [ ] Result
-- [ ] Spin
-- [ ] Statistic (Stats)
-- [ ] Table
-- [ ] Tag
-- [ ] Timeline
-- [ ] TimePicker
-- [ ] Transfer
-- [ ] Tree
-- [ ] TreeSelect
+- [-] Alert
+- [-] AutoComplete
+- [-] Calendar
+- [-] Card
+- [-] Caousel
+- [-] Cascader
+- [-] Collapse
+- [-] Comment
+- [-] DatePicker
+- [-] Descriptions
+- [-] Drawer
+- [-] Form
+- [-] Items Groups
+- [-] List
+- [-] Mentions Field
+- [-] Menu
+- [-] Message
+- [-] Modal
+- [-] Notification (Toasts)
+- [-] Pop confirm
+- [-] Popover
+- [-] Rate
+- [-] Result
+- [-] Spin
+- [-] Statistic (Stats)
+- [-] Table
+- [-] Timeline
+- [-] TimePicker
+- [-] Transfer
+- [-] Tree
+- [-] TreeSelect

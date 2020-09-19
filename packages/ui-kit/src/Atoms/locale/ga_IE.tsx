@@ -1,8 +1,8 @@
 /* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/ga_IE';
-import DatePicker from '../../date-picker/locale/ga_IE';
-import TimePicker from '../../time-picker/locale/ga_IE';
-import Calendar from '../../calendar/locale/ga_IE';
+import DatePicker from '../../Organisms/DatePicker/locale/ga_IE';
+import TimePicker from '../../Organisms/TimePicker/locale/ga_IE';
+import Calendar from '../../Organisms/Calendar/locale/ga_IE';
 import { Locale } from '../Providers/LocaleProvider';
 
 const typeTemplate = '${label} is not a valid ${type}';
