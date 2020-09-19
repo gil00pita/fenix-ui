@@ -172,6 +172,7 @@ Support for Yarn Workspaces was added by:
 - [-] Dropdown Button
 - [-] Dropdown Select
 - [-] Layout
+- [-] Tag
 
 ### Organisms
 
@@ -202,7 +203,6 @@ Support for Yarn Workspaces was added by:
 - [-] Spin
 - [-] Statistic (Stats)
 - [-] Table
-- [-] Tag
 - [-] Timeline
 - [-] TimePicker
 - [-] Transfer

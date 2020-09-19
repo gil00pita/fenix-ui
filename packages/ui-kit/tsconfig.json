@@ -20,4 +20,4 @@
   },
   "exclude": ["node_modules", "lib", "es"],
   "include": ["typings", "src/*", "src/Atoms/Avatar", "src/Molecules/Anchor", "src/Atoms/Affix"]
-}, "src/Molecules/page-header"
+}
