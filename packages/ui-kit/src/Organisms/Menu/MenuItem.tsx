@@ -3,8 +3,8 @@ import { Item, MenuItemProps as RcMenuItemProps } from 'rc-menu';
 import toArray from 'rc-util/lib/Children/toArray';
 import classNames from 'classnames';
 import MenuContext, { MenuContextProps } from './MenuContext';
-import Tooltip, { TooltipProps } from '../Atoms/Tooltip';
-import { SiderContext, SiderContextProps } from '../layout/Sider';
+import Tooltip, { TooltipProps } from '../../Atoms/Tooltip';
+import { SiderContext, SiderContextProps } from '../../Molecules/Layout/Sider';
 import { isValidElement } from '@fenix-ui/utils/lib/reactNode';
 
 export interface MenuItemProps extends Omit<RcMenuItemProps, 'title'> {

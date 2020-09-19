@@ -6,7 +6,7 @@ import SubMenu from './SubMenu';
 import Item from './MenuItem';
 import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import devWarning from '@fenix-ui/utils/lib/devWarning';
-import { SiderContext, SiderContextProps } from '../layout/Sider';
+import { SiderContext, SiderContextProps } from '../../Molecules/Layout/Sider';
 import collapseMotion from '@fenix-ui/utils/lib/motion';
 import MenuContext, { MenuTheme } from './MenuContext';
 

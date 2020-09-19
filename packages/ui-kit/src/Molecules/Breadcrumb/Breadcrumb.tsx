@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import toArray from 'rc-util/lib/Children/toArray';
 import BreadcrumbItem from './BreadcrumbItem';
 import BreadcrumbSeparator from './BreadcrumbSeparator';
-import Menu from '../menu';
+import Menu from '../../Organisms/Menu';
 import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 import devWarning from '@fenix-ui/utils/lib/devWarning';
 import { Omit } from '@fenix-ui/utils/lib/type';
