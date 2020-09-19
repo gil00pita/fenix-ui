@@ -16,7 +16,7 @@ if (
 }
 /* @remove-on-es-build-end */
 
-export { default as Affix } from './Atoms/Affix';
+export { default as Affix } from './Atoms/Affix/Affix';
 
 export { default as Anchor } from './Molecules/Anchor';
 

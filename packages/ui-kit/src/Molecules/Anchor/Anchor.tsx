@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import classNames from 'classnames';
 import addEventListener from 'rc-util/lib/Dom/addEventListener';
-import Affix from '../../Atoms/Affix';
+import Affix from '../../Atoms/Affix/Affix';
 import AnchorLink from './AnchorLink';
 import { ConfigContext, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import scrollTo from '@fenix-ui/utils/lib/scrollTo';
