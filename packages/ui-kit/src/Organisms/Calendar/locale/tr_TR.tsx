@@ -1,3 +1,3 @@
-import trTR from '../../date-picker/locale/tr_TR';
+import trTR from '../../DatePicker/locale/tr_TR';
 
 export default trTR;

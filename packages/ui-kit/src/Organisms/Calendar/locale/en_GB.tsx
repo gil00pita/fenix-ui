@@ -1,3 +1,3 @@
-import enGB from '../../date-picker/locale/en_GB';
+import enGB from '../../DatePicker/locale/en_GB';
 
 export default enGB;

@@ -1,3 +1,3 @@
-import esES from '../../date-picker/locale/es_ES';
+import esES from '../../DatePicker/locale/es_ES';
 
 export default esES;

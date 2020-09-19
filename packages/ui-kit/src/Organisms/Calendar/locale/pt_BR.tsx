@@ -1,3 +1,3 @@
-import ptBR from '../../date-picker/locale/pt_BR';
+import ptBR from '../../DatePicker/locale/pt_BR';
 
 export default ptBR;

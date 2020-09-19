@@ -15,7 +15,7 @@ import {
 } from './interface';
 import { T, fileToObject, getFileItem, removeFileItem } from './utils';
 import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
-import defaultLocale from '../locale/default';
+import defaultLocale from '../../Atoms/locale/default';
 import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import devWarning from '@fenix-ui/utils/lib/devWarning';
 

@@ -1,7 +1,7 @@
 import Pagination from 'rc-pagination/lib/locale/sk_SK';
-import DatePicker from '../../date-picker/locale/sk_SK';
+import DatePicker from '../../Organisms/DatePicker/locale/sk_SK';
 import TimePicker from '../../Organisms/TimePicker/locale/sk_SK';
-import Calendar from '../../calendar/locale/sk_SK';
+import Calendar from '../../Organisms/Calendar/locale/sk_SK';
 import { Locale } from '../Providers/LocaleProvider';
 
 const localeValues: Locale = {

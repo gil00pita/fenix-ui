@@ -1,3 +1,3 @@
-import kuIQ from '../../date-picker/locale/ku_IQ';
+import kuIQ from '../../DatePicker/ocale/ku_IQ';
 
 export default kuIQ;

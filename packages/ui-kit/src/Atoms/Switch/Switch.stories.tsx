@@ -3,7 +3,7 @@ import React from "react";
 import { withKnobs, text, boolean, number, color } from "@storybook/addon-knobs";
 
 export default {
-  title: "Atoms/Control/Switch",
+  title: "Atoms/Switch",
   decorators: [withKnobs]
 };
 

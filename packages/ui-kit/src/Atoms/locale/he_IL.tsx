@@ -1,8 +1,8 @@
 /* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/he_IL';
-import DatePicker from '../../date-picker/locale/he_IL';
+import DatePicker from '../../Organisms/DatePicker/locale/he_IL';
 import TimePicker from '../../Organisms/TimePicker/locale/he_IL';
-import Calendar from '../../calendar/locale/he_IL';
+import Calendar from '../../Organisms/Calendar/locale/he_IL';
 import { Locale } from '../Providers/LocaleProvider';
 
 const typeTemplate = '${label} הוא לא ${type} תקין';

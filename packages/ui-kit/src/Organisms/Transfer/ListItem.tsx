@@ -2,8 +2,8 @@ import * as React from 'react';
 import classNames from 'classnames';
 import DeleteOutlined from '@ant-design/icons/DeleteOutlined';
 import { TransferItem, TransferLocale } from '.';
-import defaultLocale from '../locale/default';
-import Checkbox from '../checkbox';
+import defaultLocale from '../../Atoms/locale/default';
+import Checkbox from '../../Atoms/Checkbox';
 import TransButton from '@fenix-ui/utils/lib/transButton';
 import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
 

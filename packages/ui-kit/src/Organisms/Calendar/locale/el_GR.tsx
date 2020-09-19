@@ -1,3 +1,3 @@
-import elGR from '../../date-picker/locale/el_GR';
+import elGR from '../../DatePicker/locale/el_GR';
 
 export default elGR;

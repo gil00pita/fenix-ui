@@ -1,3 +1,3 @@
-import ukUA from '../../date-picker/locale/uk_UA';
+import ukUA from '../../DatePicker/locale/uk_UA';
 
 export default ukUA;

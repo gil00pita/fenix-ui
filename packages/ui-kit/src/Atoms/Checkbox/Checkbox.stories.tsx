@@ -4,7 +4,7 @@ import { withKnobs, text, boolean, number, color, select } from "@storybook/addo
 import Checkbox from './Checkbox';
 
 export default {
-  title: "Atoms/Controls/Checkbox",
+  title: "Atoms/Checkbox",
   decorators: [withKnobs]
 };
 

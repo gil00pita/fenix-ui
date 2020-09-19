@@ -1,3 +1,3 @@
-import enUS from '../../date-picker/locale/en_US';
+import enUS from '../../DatePicker/locale/en_US';
 
 export default enUS;

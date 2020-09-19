@@ -1,3 +1,3 @@
-import srRS from '../../date-picker/locale/sr_RS';
+import srRS from '../../DatePicker/locale/sr_RS';
 
 export default srRS;

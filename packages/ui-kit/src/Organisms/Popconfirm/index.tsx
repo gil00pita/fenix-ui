@@ -6,7 +6,7 @@ import Tooltip, { AbstractTooltipProps } from '../Atoms/Tooltip';
 import Button from '../button';
 import { LegacyButtonType, NativeButtonProps, convertLegacyProps } from '../button/button';
 import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
-import defaultLocale from '../locale/default';
+import defaultLocale from '../../Atoms/locale/default';
 import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 import { getRenderPropValue, RenderFunction } from '@fenix-ui/utils/lib/getRenderPropValue';
 import { cloneElement } from '@fenix-ui/utils/lib/reactNode';

@@ -1,3 +1,3 @@
-import arEG from '../../date-picker/locale/ar_EG';
+import arEG from '../../DatePicker/locale/ar_EG';
 
 export default arEG;

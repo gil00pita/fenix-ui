@@ -4,7 +4,7 @@ import List, { TransferListProps } from './list';
 import Operation from './operation';
 import Search from './search';
 import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
-import defaultLocale from '../locale/default';
+import defaultLocale from '../../Atoms/locale/default';
 import { ConfigConsumer, ConfigConsumerProps, RenderEmptyHandler } from '../../Atoms/Providers/ConfigProvider';
 import { TransferListBodyProps } from './ListBody';
 import { PaginationType } from './interface';

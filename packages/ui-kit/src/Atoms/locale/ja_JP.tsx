@@ -1,8 +1,8 @@
 /* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/ja_JP';
-import DatePicker from '../../date-picker/locale/ja_JP';
+import DatePicker from '../../Organisms/DatePicker/locale/ja_JP';
 import TimePicker from '../../Organisms/TimePicker/locale/ja_JP';
-import Calendar from '../../calendar/locale/ja_JP';
+import Calendar from '../../Organisms/Calendar/locale/ja_JP';
 import { Locale } from '../Providers/LocaleProvider';
 
 const typeTemplate = '${label}は有効な${type}ではありません';

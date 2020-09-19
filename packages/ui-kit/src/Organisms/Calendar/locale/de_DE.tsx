@@ -1,3 +1,3 @@
-import deDE from '../../date-picker/locale/de_DE';
+import deDE from '../../DatePicker/locale/de_DE';
 
 export default deDE;

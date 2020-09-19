@@ -1,8 +1,8 @@
 /* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/fa_IR';
-import DatePicker from '../../date-picker/locale/fa_IR';
+import DatePicker from '../../Organisms/DatePicker/locale/fa_IR';
 import TimePicker from '../../Organisms/TimePicker/locale/fa_IR';
-import Calendar from '../../calendar/locale/fa_IR';
+import Calendar from '../../Organisms/Calendar/locale/fa_IR';
 import { Locale } from '../Providers/LocaleProvider';
 
 const typeTemplate = '${label} از نوع ${type} معتبر نیست';

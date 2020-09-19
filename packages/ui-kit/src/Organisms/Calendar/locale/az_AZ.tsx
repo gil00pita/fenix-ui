@@ -1,3 +1,3 @@
-import azAZ from '../../date-picker/locale/az_AZ';
+import azAZ from '../../DatePicker/locale/az_AZ';
 
 export default azAZ;

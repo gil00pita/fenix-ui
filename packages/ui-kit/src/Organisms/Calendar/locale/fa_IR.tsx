@@ -1,3 +1,3 @@
-import faIR from '../../date-picker/locale/fa_IR';
+import faIR from '../../DatePicker/locale/fa_IR';
 
 export default faIR;

@@ -3,6 +3,6 @@ import './index.less';
 
 // style dependencies
 // deps-lint-skip: date-picker
-import '../../select/style';
-import '../../radio/style';
-import '../../date-picker/style';
+import '../../../Molecules/Select/style';
+import '../../../Atoms/Radio/style';
+import '../../DatePicker/style';

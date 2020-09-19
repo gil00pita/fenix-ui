@@ -1,8 +1,8 @@
 /* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/zh_CN';
-import DatePicker from '../../date-picker/locale/zh_CN';
+import DatePicker from '../../Organisms/DatePicker/locale/zh_CN';
 import TimePicker from '../../Organisms/TimePicker/locale/zh_CN';
-import Calendar from '../../calendar/locale/zh_CN';
+import Calendar from '../../Organisms/Calendar/locale/zh_CN';
 import { Locale } from '../Providers/LocaleProvider';
 
 const typeTemplate = '${label}不是一个有效的${type}';

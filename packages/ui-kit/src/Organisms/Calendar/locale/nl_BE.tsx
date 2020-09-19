@@ -1,3 +1,3 @@
-import nlBE from '../../date-picker/locale/nl_BE';
+import nlBE from '../../DatePicker/locale/nl_BE';
 
 export default nlBE;
