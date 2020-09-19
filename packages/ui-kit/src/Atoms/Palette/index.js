@@ -46,7 +46,7 @@ export { default as social } from './social';
 export { default as teal } from './teal';
 export { default as yellow } from './yellow';
 
-const allColorsArray = {
+const colors = {
   amber,
   blue,
   brand,
@@ -71,6 +71,8 @@ const allColorsArray = {
   teal,
   yellow,
 };
+
+export default colors;
 
 /**
  * Converts the Name with dash to camel case
@@ -100,7 +102,8 @@ export const getColor = (str, variation) => {
     } else {
       finalVariation = variation;
     }
-    camelStr = allColorsArray[str];
+    camelStr = colors[str];
   }
   return camelStr[finalVariation];
 };
+
