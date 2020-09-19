@@ -1,7 +1,7 @@
 /* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/ko_KR';
 import DatePicker from '../../date-picker/locale/ko_KR';
-import TimePicker from '../../time-picker/locale/ko_KR';
+import TimePicker from '../../Organisms/TimePicker/locale/ko_KR';
 import Calendar from '../../calendar/locale/ko_KR';
 import { Locale } from '../Providers/LocaleProvider';
 

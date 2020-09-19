@@ -1,6 +1,6 @@
 import Pagination from 'rc-pagination/lib/locale/en_US';
 import DatePicker from '../../date-picker/locale/en_US';
-import TimePicker from '../../time-picker/locale/en_US';
+import TimePicker from '../../Organisms/TimePicker/locale/en_US';
 import Calendar from '../../calendar/locale/en_US';
 import { Locale } from '../Providers/LocaleProvider';
 

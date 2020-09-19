@@ -160,6 +160,7 @@ Support for Yarn Workspaces was added by:
 - [-] BackTop
 - [x] Button
 - [-] Charts
+- [-] Empty Spaces
 - [-] Input
 - [-] InputNumber
 - [-] PageHeader
@@ -187,7 +188,6 @@ Support for Yarn Workspaces was added by:
 - [-] DatePicker
 - [-] Descriptions
 - [-] Drawer
-- [-] Empty Spaces
 - [-] Form
 - [-] Items Groups
 - [-] List

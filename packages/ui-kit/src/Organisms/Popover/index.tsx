@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Tooltip, { AbstractTooltipProps, TooltipPlacement } from '../Atoms/Tooltip';
+import Tooltip, { AbstractTooltipProps, TooltipPlacement } from '../../Atoms/Tooltip';
 import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 import { getRenderPropValue, RenderFunction } from '@fenix-ui/utils/lib/getRenderPropValue';
 

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import toArray from 'rc-util/lib/Children/toArray';
 import { ConfigContext } from '../Providers/ConfigProvider';
 import Avatar from './Avatar';
-import Popover from '../../popover';
+import Popover from '../../Organisms/Popover';
 import StyledAvatarGroup from './AvatarGroup.styles';
 import { Text } from '../Typography'
 
