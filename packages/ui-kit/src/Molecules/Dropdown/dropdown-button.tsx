@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import EllipsisOutlined from '@ant-design/icons/EllipsisOutlined';
 
 import Button from '../button';
-import { ButtonHTMLType } from '../button/button';
-import { ButtonGroupProps } from '../button/button-group';
+import { ButtonHTMLType } from '../Button/Button';
+import { ButtonGroupProps } from '../Button/ButtonGroup';
 import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 import Dropdown, { DropDownProps } from './dropdown';
 
