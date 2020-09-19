@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import omit from 'omit.js';
 import ResizeObserver from 'rc-resize-observer';
 import { ConfigContext, ConfigConsumerProps } from '../Providers/ConfigProvider';
-import { throttleByAnimationFrameDecorator } from '@fenix-ui/ui-kit/lib/throttleByAnimationFrame';
+import { throttleByAnimationFrameDecorator } from '@fenix-ui/utils/lib/throttleByAnimationFrame';
 
 import {
   addObserveTarget,
