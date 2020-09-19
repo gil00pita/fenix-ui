@@ -1,7 +1,7 @@
 import * as React from 'react';
 import RcCollapse from 'rc-collapse';
 import classNames from 'classnames';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 
 export interface CollapsePanelProps {
   key: string | number;

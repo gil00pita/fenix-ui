@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, mount } from 'enzyme';
 import List from '..';
-import ConfigProvider from '../../config-provider';
+import ConfigProvider from '../../../Atoms/Providers/ConfigProvider';
 
 describe('List Item Layout', () => {
   const data = [

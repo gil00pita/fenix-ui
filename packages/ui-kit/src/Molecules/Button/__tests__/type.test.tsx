@@ -4,11 +4,11 @@ import { act } from 'react-dom/test-utils';
 import { SearchOutlined } from '@ant-design/icons';
 import { resetWarned } from 'rc-util/lib/warning'
 import Button from '..';
-import ConfigProvider from '../../config-provider';
+import ConfigProvider from '../../../Atoms/Providers/ConfigProvider';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { sleep } from '../../../tests/utils';
-import { SizeType } from '../../config-provider/SizeContext';
+import { SizeType } from '../../../Atoms/Providers/ConfigProvider/SizeContext';
 
 describe('Button', () => {
   mountTest(Button);
@@ -302,7 +302,7 @@ describe('Button', () => {
     );
     warnSpy.mockRestore();
   })
-  
+
   it('should warning when pass type=text and ghost=true', () => {
     resetWarned()
     const warnSpy = jest.spyOn(console, 'error').mockImplementation(() => {});

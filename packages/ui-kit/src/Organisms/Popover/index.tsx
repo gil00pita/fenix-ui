@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Tooltip, { AbstractTooltipProps, TooltipPlacement } from '../Atoms/Tooltip';
-import { ConfigContext } from '../config-provider';
-import { getRenderPropValue, RenderFunction } from '../_util/getRenderPropValue';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import { getRenderPropValue, RenderFunction } from '@fenix-ui/utils/lib/getRenderPropValue';
 
 export interface PopoverProps extends AbstractTooltipProps {
   title?: React.ReactNode | RenderFunction;

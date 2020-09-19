@@ -2,9 +2,9 @@ import * as React from 'react';
 import classNames from 'classnames';
 import omit from 'omit.js';
 import debounce from 'lodash/debounce';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import { tuple } from '../_util/type';
-import { isValidElement, cloneElement } from '../_util/reactNode';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import { tuple } from '@fenix-ui/utils/lib/type';
+import { isValidElement, cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 const SpinSizes = tuple('small', 'default', 'large');
 export type SpinSize = typeof SpinSizes[number];

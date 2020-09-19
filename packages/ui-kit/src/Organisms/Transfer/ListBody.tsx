@@ -1,6 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import { ElementOf, Omit, tuple } from '../_util/type';
+import { ElementOf, Omit, tuple } from '@fenix-ui/utils/lib/type';
 import Pagination from '../pagination';
 import { TransferItem } from '.';
 import { TransferListProps, RenderedItem } from './list';

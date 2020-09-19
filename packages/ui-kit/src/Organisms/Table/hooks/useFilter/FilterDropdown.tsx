@@ -12,7 +12,7 @@ import { ColumnType, ColumnFilterItem, Key, TableLocale, GetPopupContainer } fro
 import FilterDropdownMenuWrapper from './FilterWrapper';
 import { FilterState } from '.';
 import useSyncState from '../useSyncState';
-import { ConfigContext } from '../../../config-provider/context';
+import { ConfigContext } from '../../../../Atoms/Providers/ConfigProvider/context';
 
 const { SubMenu, Item: MenuItem } = Menu;
 

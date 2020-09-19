@@ -6,9 +6,9 @@ import Meta from './Meta';
 import Tabs, { TabsProps } from '../tabs';
 import Row from '../row';
 import Col from '../col';
-import { ConfigContext } from '../config-provider';
-import { Omit } from '../_util/type';
-import SizeContext from '../config-provider/SizeContext';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import { Omit } from '@fenix-ui/utils/lib/type';
+import SizeContext from '../../Atoms/Providers/ConfigProvider/SizeContext';
 
 function getAction(actions: React.ReactNode[]) {
   const actionList = actions.map((action, index) => (

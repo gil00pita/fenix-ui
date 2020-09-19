@@ -1,14 +1,14 @@
-import * as React from './node_modules/react';
-import classNames from './node_modules/classnames';
-import omit from './node_modules/omit.js.js';
-import CloseOutlined from './node_modules/@ant-design/icons/CloseOutlined';
-import CheckOutlined from './node_modules/@ant-design/icons/CheckOutlined';
-import CheckCircleFilled from './node_modules/@ant-design/icons/CheckCircleFilled';
-import CloseCircleFilled from './node_modules/@ant-design/icons/CloseCircleFilled';
+import * as React from 'react';
+import classNames from 'classnames';
+import omit from 'omit.js.js';
+import CloseOutlined from '@ant-design/icons/CloseOutlined';
+import CheckOutlined from '@ant-design/icons/CheckOutlined';
+import CheckCircleFilled from '@ant-design/icons/CheckCircleFilled';
+import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
 
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import { tuple } from '../_util/type';
-import devWarning from '../_util/devWarning';
+import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
+import { tuple } from '@fenix-ui/utils/lib/type';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 import Line from './Line';
 import Circle from './Circle';
 import Steps from './Steps';

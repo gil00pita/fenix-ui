@@ -7,7 +7,7 @@ import { convertDataToEntities, convertTreeToData } from 'rc-tree/lib/utils/tree
 import FileOutlined from '@ant-design/icons/FileOutlined';
 import FolderOpenOutlined from '@ant-design/icons/FolderOpenOutlined';
 import FolderOutlined from '@ant-design/icons/FolderOutlined';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 
 import Tree, { TreeProps, AntdTreeNodeAttribute } from './Tree';
 import { calcRangeKeys, convertDirectoryKeysToNodes } from './utils/dictUtil';

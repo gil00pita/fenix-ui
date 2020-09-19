@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import RcMentions from 'rc-mentions';
 import { MentionsProps as RcMentionsProps } from 'rc-mentions/lib/Mentions';
 import Spin from '../spin';
-import { ConfigContext } from '../config-provider';
-import { composeRef } from '../_util/ref';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import { composeRef } from '@fenix-ui/utils/lib/ref';
 
 export const { Option } = RcMentions;
 

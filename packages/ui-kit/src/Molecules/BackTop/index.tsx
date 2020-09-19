@@ -4,10 +4,10 @@ import addEventListener from 'rc-util/lib/Dom/addEventListener';
 import classNames from 'classnames';
 import omit from 'omit.js';
 import VerticalAlignTopOutlined from '@ant-design/icons/VerticalAlignTopOutlined';
-import throttleByAnimationFrame from '../_util/throttleByAnimationFrame';
-import { ConfigContext } from '../config-provider';
-import getScroll from '../_util/getScroll';
-import scrollTo from '../_util/scrollTo';
+import throttleByAnimationFrame from '@fenix-ui/utils/lib/throttleByAnimationFrame';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import getScroll from '@fenix-ui/utils/lib/getScroll';
+import scrollTo from '@fenix-ui/utils/lib/scrollTo';
 
 export interface BackTopProps {
   visibilityHeight?: number;

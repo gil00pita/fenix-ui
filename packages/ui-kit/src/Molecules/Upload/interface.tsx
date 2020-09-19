@@ -1,4 +1,4 @@
-import * as React from './node_modules/react';
+import * as React from 'react';
 import { ProgressProps } from '../progress';
 
 export type UploadFileStatus = 'error' | 'success' | 'done' | 'uploading' | 'removed';

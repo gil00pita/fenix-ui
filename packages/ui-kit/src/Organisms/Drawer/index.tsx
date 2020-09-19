@@ -5,9 +5,9 @@ import CloseOutlined from '@ant-design/icons/CloseOutlined';
 import classNames from 'classnames';
 import omit from 'omit.js';
 
-import { ConfigConsumerProps } from '../config-provider';
-import { withConfigConsumer, ConfigConsumer } from '../config-provider/context';
-import { tuple } from '../_util/type';
+import { ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import { withConfigConsumer, ConfigConsumer } from '../../Atoms/Providers/ConfigProvider/context';
+import { tuple } from '@fenix-ui/utils/lib/type';
 
 const DrawerContext = React.createContext<Drawer | null>(null);
 

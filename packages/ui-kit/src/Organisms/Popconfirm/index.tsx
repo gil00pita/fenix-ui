@@ -5,11 +5,11 @@ import KeyCode from 'rc-util/lib/KeyCode';
 import Tooltip, { AbstractTooltipProps } from '../Atoms/Tooltip';
 import Button from '../button';
 import { LegacyButtonType, NativeButtonProps, convertLegacyProps } from '../button/button';
-import LocaleReceiver from '../locale-provider/LocaleReceiver';
+import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
 import defaultLocale from '../locale/default';
-import { ConfigContext } from '../config-provider';
-import { getRenderPropValue, RenderFunction } from '../_util/getRenderPropValue';
-import { cloneElement } from '../_util/reactNode';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import { getRenderPropValue, RenderFunction } from '@fenix-ui/utils/lib/getRenderPropValue';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 export interface PopconfirmProps extends AbstractTooltipProps {
   title: React.ReactNode | RenderFunction;

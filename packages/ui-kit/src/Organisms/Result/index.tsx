@@ -5,8 +5,8 @@ import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
 import ExclamationCircleFilled from '@ant-design/icons/ExclamationCircleFilled';
 import WarningFilled from '@ant-design/icons/WarningFilled';
 
-import { ConfigConsumerProps, ConfigConsumer } from '../config-provider';
-import devWarning from '../_util/devWarning';
+import { ConfigConsumerProps, ConfigConsumer } from '../../Atoms/Providers/ConfigProvider';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 import noFound from './noFound';
 import serverError from './serverError';

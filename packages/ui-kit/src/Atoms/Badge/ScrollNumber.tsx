@@ -1,7 +1,7 @@
-import * as React from './node_modules/react';
-import classNames from './node_modules/classnames';
-import { ConfigContext } from '../config-provider';
-import { cloneElement } from '../_util/reactNode';
+import * as React from 'react';
+import classNames from 'classnames';
+import { ConfigContext } from '../Providers/ConfigProvider';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 function getNumberArray(num: string | number | undefined | null) {
   return num

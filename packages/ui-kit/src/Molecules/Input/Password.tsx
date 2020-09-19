@@ -5,7 +5,7 @@ import EyeOutlined from '@ant-design/icons/EyeOutlined';
 import EyeInvisibleOutlined from '@ant-design/icons/EyeInvisibleOutlined';
 
 import { useState } from 'react';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import Input, { InputProps } from './Input';
 
 export interface PasswordProps extends InputProps {

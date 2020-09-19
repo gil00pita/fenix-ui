@@ -12,7 +12,7 @@ import {
   RangePickerTimeProps as RCRangePickerTimeProps,
 } from 'rc-picker/lib/RangePicker';
 import { PickerMode, Locale as RcPickerLocale } from 'rc-picker/lib/interface';
-import { SizeType } from '../../config-provider/SizeContext';
+import { SizeType } from '../../../Atoms/Providers/ConfigProvider/SizeContext';
 import PickerButton from '../PickerButton';
 import PickerTag from '../PickerTag';
 import { TimePickerLocale } from '../../time-picker';

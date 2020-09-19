@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 
 const Simple = () => {
   const { getPrefixCls } = React.useContext(ConfigContext);

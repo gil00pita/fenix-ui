@@ -2,8 +2,8 @@ import { Moment } from 'moment';
 import * as React from 'react';
 import DatePicker from '../date-picker';
 import { PickerTimeProps, RangePickerTimeProps } from '../date-picker/generatePicker';
-import devWarning from '../_util/devWarning';
-import { Omit } from '../_util/type';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
+import { Omit } from '@fenix-ui/utils/lib/type';
 
 const { TimePicker: InternalTimePicker, RangePicker: InternalRangePicker } = DatePicker;
 

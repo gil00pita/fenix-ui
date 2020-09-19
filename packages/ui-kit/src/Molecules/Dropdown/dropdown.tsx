@@ -4,10 +4,10 @@ import classNames from 'classnames';
 import RightOutlined from '@ant-design/icons/RightOutlined';
 
 import DropdownButton from './dropdown-button';
-import { ConfigContext } from '../config-provider';
-import devWarning from '../_util/devWarning';
-import { tuple } from '../_util/type';
-import { cloneElement } from '../_util/reactNode';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
+import { tuple } from '@fenix-ui/utils/lib/type';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 const Placements = tuple(
   'topLeft',

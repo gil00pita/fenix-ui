@@ -1,11 +1,11 @@
 /* eslint-disable import/first */
-jest.mock('../../_util/scrollTo');
+jest.mock('@fenix-ui/utils/lib/scrollTo');
 
 import React from 'react';
 import { mount } from 'enzyme';
 import Table from '..';
-import scrollTo from '../../_util/scrollTo';
-import { resetWarned } from '../../_util/devWarning';
+import scrollTo from '@fenix-ui/utils/lib/scrollTo';
+import { resetWarned } from '@fenix-ui/utils/lib/devWarning';
 
 describe('Table.pagination', () => {
   const columns = [

@@ -1,7 +1,7 @@
-import * as React from './node_modules/react';
-import omit from './node_modules/omit.js.js';
-import classNames from './node_modules/classnames';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import * as React from 'react';
+import omit from 'omit.js.js';
+import classNames from 'classnames';
+import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
 import Element, { SkeletonElementProps } from './Element';
 
 export interface AvatarProps extends Omit<SkeletonElementProps, 'shape'> {

@@ -7,9 +7,9 @@ import SwapRightOutlined from '@ant-design/icons/SwapRightOutlined';
 import { RangePicker as RCRangePicker } from 'rc-picker';
 import { GenerateConfig } from 'rc-picker/lib/generate/index';
 import enUS from '../locale/en_US';
-import { ConfigContext, ConfigConsumerProps } from '../../config-provider';
-import SizeContext from '../../config-provider/SizeContext';
-import LocaleReceiver from '../../locale-provider/LocaleReceiver';
+import { ConfigContext, ConfigConsumerProps } from '../../../Atoms/Providers/ConfigProvider';
+import SizeContext from '../../../Atoms/Providers/ConfigProvider/SizeContext';
+import LocaleReceiver from '../../../Atoms/Providers/LocaleProvider/LocaleReceiver';
 import { getRangePlaceholder } from '../util';
 import { RangePickerProps, PickerLocale, getTimeProps, Components } from '.';
 

@@ -2,10 +2,10 @@ import * as React from 'react';
 import RcCheckbox from 'rc-checkbox';
 import classNames from 'classnames';
 import { RadioProps, RadioChangeEvent } from './interface';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../Providers/ConfigProvider';
 import RadioGroupContext from './context';
-import { composeRef } from '../_util/ref';
-import devWarning from '../_util/devWarning';
+import { composeRef } from '@fenix-ui/utils/lib/ref';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 const InternalRadio: React.ForwardRefRenderFunction<unknown, RadioProps> = (props, ref) => {
   const context = React.useContext(RadioGroupContext);

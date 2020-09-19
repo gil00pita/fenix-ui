@@ -1,8 +1,8 @@
-import * as React from './node_modules/react';
-import DownOutlined from './node_modules/@ant-design/icons/DownOutlined';
+import * as React from 'react';
+import DownOutlined from '@ant-design/icons/DownOutlined';
 
 import DropDown, { DropDownProps } from '../dropdown/dropdown';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 
 export interface BreadcrumbItemProps {
   prefixCls?: string;

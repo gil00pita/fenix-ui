@@ -3,7 +3,7 @@ import { SubMenu as RcSubMenu } from 'rc-menu';
 import classNames from 'classnames';
 import omit from 'omit.js';
 import MenuContext, { MenuContextProps } from './MenuContext';
-import { isValidElement } from '../_util/reactNode';
+import { isValidElement } from '@fenix-ui/utils/lib/reactNode';
 
 interface TitleEventEntity {
   key: string;

@@ -1,13 +1,13 @@
-import * as React from './node_modules/react';
-import classNames from './node_modules/classnames';
-import toArray from './node_modules/rc-util/lib/Children/toArray';
+import * as React from 'react';
+import classNames from 'classnames';
+import toArray from 'rc-util/lib/Children/toArray';
 import BreadcrumbItem from './BreadcrumbItem';
 import BreadcrumbSeparator from './BreadcrumbSeparator';
 import Menu from '../menu';
-import { ConfigContext } from '../config-provider';
-import devWarning from '../_util/devWarning';
-import { Omit } from '../_util/type';
-import { cloneElement } from '../_util/reactNode';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
+import { Omit } from '@fenix-ui/utils/lib/type';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 export interface Route {
   path: string;

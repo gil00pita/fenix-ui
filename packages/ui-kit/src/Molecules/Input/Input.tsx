@@ -5,11 +5,11 @@ import Group from './Group';
 import Search from './Search';
 import TextArea from './TextArea';
 import Password from './Password';
-import { Omit, LiteralUnion } from '../_util/type';
+import { Omit, LiteralUnion } from '@fenix-ui/utils/lib/type';
 import ClearableLabeledInput, { hasPrefixSuffix } from './ClearableLabeledInput';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import SizeContext, { SizeType } from '../config-provider/SizeContext';
-import devWarning from '../_util/devWarning';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import SizeContext, { SizeType } from '../../Atoms/Providers/ConfigProvider/SizeContext';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 export interface InputProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size' | 'prefix' | 'type'> {

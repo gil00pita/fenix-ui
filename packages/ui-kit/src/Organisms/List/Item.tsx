@@ -2,8 +2,8 @@ import * as React from 'react';
 import classNames from 'classnames';
 import { ListGridType, ListContext } from './index';
 import { Col } from '../grid';
-import { ConfigContext } from '../config-provider';
-import { cloneElement } from '../_util/reactNode';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 export interface ListItemProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;

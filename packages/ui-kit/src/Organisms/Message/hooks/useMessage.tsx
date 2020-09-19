@@ -5,7 +5,7 @@ import {
   NoticeContent as RCNoticeContent,
   HolderReadyCallback as RCHolderReadyCallback,
 } from 'rc-notification/lib/Notification';
-import { ConfigConsumer, ConfigConsumerProps } from '../../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../../../Atoms/Providers/ConfigProvider';
 import {
   MessageInstance,
   ArgsProps,

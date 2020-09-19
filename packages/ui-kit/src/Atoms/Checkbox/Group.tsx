@@ -1,8 +1,8 @@
-import * as React from './node_modules/react';
-import classNames from './node_modules/classnames';
-import omit from './node_modules/omit.js.js';
+import * as React from 'react';
+import classNames from 'classnames';
+import omit from 'omit.js.js';
 import Checkbox, { CheckboxChangeEvent } from './Checkbox';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
 
 export type CheckboxValueType = string | number | boolean;
 

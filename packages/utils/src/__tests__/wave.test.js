@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Wave from '../wave';
-import ConfigProvider from '../../config-provider';
+import ConfigProvider from '@fenix-ui/ui-kit/src/Atoms/Providers/ConfigProvider';
 import mountTest from '../../../tests/shared/mountTest';
 import { sleep } from '../../../tests/utils';
 

@@ -4,7 +4,7 @@ import { Col, Row } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import useBreakpoint from '../hooks/useBreakpoint';
-import ResponsiveObserve from '../../_util/responsiveObserve';
+import ResponsiveObserve from '@fenix-ui/utils/lib/responsiveObserve';
 
 describe('Grid', () => {
   mountTest(Row);

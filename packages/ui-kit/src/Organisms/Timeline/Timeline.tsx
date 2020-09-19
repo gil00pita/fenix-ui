@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 
 import TimelineItem, { TimeLineItemProps } from './TimelineItem';
-import { ConfigContext } from '../config-provider';
-import { cloneElement } from '../_util/reactNode';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 export interface TimelineProps {
   prefixCls?: string;

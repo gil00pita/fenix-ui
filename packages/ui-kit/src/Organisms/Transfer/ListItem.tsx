@@ -4,8 +4,8 @@ import DeleteOutlined from '@ant-design/icons/DeleteOutlined';
 import { TransferItem, TransferLocale } from '.';
 import defaultLocale from '../locale/default';
 import Checkbox from '../checkbox';
-import TransButton from '../_util/transButton';
-import LocaleReceiver from '../locale-provider/LocaleReceiver';
+import TransButton from '@fenix-ui/utils/lib/transButton';
+import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
 
 type ListItemProps = {
   renderedText?: string | number;

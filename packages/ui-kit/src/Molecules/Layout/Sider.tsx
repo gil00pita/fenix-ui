@@ -6,8 +6,8 @@ import RightOutlined from '@ant-design/icons/RightOutlined';
 import LeftOutlined from '@ant-design/icons/LeftOutlined';
 
 import { LayoutContext, LayoutContextProps } from './layout';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import isNumeric from '../_util/isNumeric';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import isNumeric from '@fenix-ui/utils/lib/isNumeric';
 
 const dimensionMaxMap = {
   xs: '479.98px',

@@ -11,9 +11,9 @@ import { SelectProps as RcSelectProps } from 'rc-select';
 import classNames from 'classnames';
 import omit from 'omit.js';
 import Select, { InternalSelectProps, OptionType } from '../select';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import devWarning from '../_util/devWarning';
-import { isValidElement } from '../_util/reactNode';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
+import { isValidElement } from '@fenix-ui/utils/lib/reactNode';
 
 const { Option } = Select;
 

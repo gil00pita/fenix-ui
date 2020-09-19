@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, mount } from 'enzyme';
 import Space from '..';
-import ConfigProvider from '../../config-provider';
+import ConfigProvider from '../../Providers/ConfigProvider';
 import mountTest from '../../../tests/shared/mountTest';
 
 describe('Space', () => {

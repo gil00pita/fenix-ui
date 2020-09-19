@@ -8,14 +8,14 @@ import { Meta, NamePath } from 'rc-field-form/lib/interface';
 import { supportRef } from 'rc-util/lib/ref';
 import omit from 'omit.js';
 import Row from '../grid/row';
-import { ConfigContext } from '../config-provider';
-import { tuple } from '../_util/type';
-import devWarning from '../_util/devWarning';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import { tuple } from '@fenix-ui/utils/lib/type';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 import FormItemLabel, { FormItemLabelProps } from './FormItemLabel';
 import FormItemInput, { FormItemInputProps } from './FormItemInput';
 import { FormContext, FormItemContext } from './context';
 import { toArray, getFieldId } from './util';
-import { cloneElement, isValidElement } from '../_util/reactNode';
+import { cloneElement, isValidElement } from '@fenix-ui/utils/lib/reactNode';
 import useFrameState from './hooks/useFrameState';
 import useItemRef from './hooks/useItemRef';
 

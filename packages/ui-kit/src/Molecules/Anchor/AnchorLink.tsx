@@ -1,7 +1,7 @@
 import * as React from 'antd/es/Anchor/node_modules/react';
 import classNames from 'antd/es/Anchor/node_modules/classnames';
 import { AntAnchor } from './Anchor';
-import { ConfigConsumer, ConfigConsumerProps } from '../../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import AnchorContext from './context';
 
 export interface AnchorLinkProps {

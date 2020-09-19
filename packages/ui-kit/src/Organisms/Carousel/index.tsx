@@ -2,7 +2,7 @@ import * as React from 'react';
 import debounce from 'lodash/debounce';
 import SlickCarousel, { Settings } from '@ant-design/react-slick';
 import classNames from 'classnames';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 
 export type CarouselEffect = 'scrollx' | 'fade';
 export type DotPosition = 'top' | 'bottom' | 'left' | 'right';

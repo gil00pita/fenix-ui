@@ -5,7 +5,7 @@ import EllipsisOutlined from '@ant-design/icons/EllipsisOutlined';
 import Button from '../button';
 import { ButtonHTMLType } from '../button/button';
 import { ButtonGroupProps } from '../button/button-group';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 import Dropdown, { DropDownProps } from './dropdown';
 
 const ButtonGroup = Button.Group;

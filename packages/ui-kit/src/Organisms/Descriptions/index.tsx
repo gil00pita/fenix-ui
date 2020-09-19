@@ -6,12 +6,12 @@ import ResponsiveObserve, {
   Breakpoint,
   ScreenMap,
   responsiveArray,
-} from '../_util/responsiveObserve';
-import devWarning from '../_util/devWarning';
-import { ConfigContext } from '../config-provider';
+} from '@fenix-ui/utils/lib/responsiveObserve';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 import Row from './Row';
 import DescriptionsItem from './Item';
-import { cloneElement } from '../_util/reactNode';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 const DEFAULT_COLUMN_MAP: Record<Breakpoint, number> = {
   xxl: 3,

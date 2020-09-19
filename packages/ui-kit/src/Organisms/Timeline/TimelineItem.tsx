@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import omit from 'omit.js';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 
 export interface TimeLineItemProps {
   prefixCls?: string;

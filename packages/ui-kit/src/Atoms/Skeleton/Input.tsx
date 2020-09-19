@@ -1,8 +1,8 @@
-import * as React from './node_modules/react';
-import omit from './node_modules/omit.js.js';
-import classNames from './node_modules/classnames';
+import * as React from 'react';
+import omit from 'omit.js.js';
+import classNames from 'classnames';
 import Element, { SkeletonElementProps } from './Element';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
 
 export interface SkeletonInputProps extends Omit<SkeletonElementProps, 'size' | 'shape'> {
   size?: 'large' | 'small' | 'default';

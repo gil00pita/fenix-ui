@@ -1,8 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 
-import { ConfigConsumerProps } from '../config-provider';
-import { withConfigConsumer } from '../config-provider/context';
+import { ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import { withConfigConsumer } from '../../Atoms/Providers/ConfigProvider/context';
 import StatisticNumber from './Number';
 import Countdown from './Countdown';
 import { valueType, FormatConfig } from './utils';

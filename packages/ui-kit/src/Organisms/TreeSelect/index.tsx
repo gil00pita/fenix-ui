@@ -8,12 +8,12 @@ import RcTreeSelect, {
 } from 'rc-tree-select';
 import classNames from 'classnames';
 import omit from 'omit.js';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import devWarning from '../_util/devWarning';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 import { AntTreeNodeProps } from '../tree';
 import getIcons from '../select/utils/iconUtil';
 import renderSwitcherIcon from '../tree/utils/iconUtil';
-import SizeContext, { SizeType } from '../config-provider/SizeContext';
+import SizeContext, { SizeType } from '../../Atoms/Providers/ConfigProvider/SizeContext';
 
 type RawValue = string | number;
 

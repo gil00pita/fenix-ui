@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Statistic, { StatisticProps } from './Statistic';
 import { formatCountdown, countdownValueType, FormatConfig } from './utils';
-import { cloneElement } from '../_util/reactNode';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 const REFRESH_INTERVAL = 1000 / 30;
 

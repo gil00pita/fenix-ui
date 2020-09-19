@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ResponsiveObserve, { ScreenMap } from '../../_util/responsiveObserve';
+import ResponsiveObserve, { ScreenMap } from '@fenix-ui/utils/lib/responsiveObserve';
 
 function useBreakpoint(): ScreenMap {
   const [screens, setScreens] = useState<ScreenMap>({});

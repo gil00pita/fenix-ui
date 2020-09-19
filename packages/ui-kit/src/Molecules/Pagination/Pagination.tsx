@@ -9,8 +9,8 @@ import DoubleRightOutlined from '@ant-design/icons/DoubleRightOutlined';
 
 import MiniSelect from './MiniSelect';
 import Select from '../select';
-import LocaleReceiver from '../locale-provider/LocaleReceiver';
-import { ConfigContext } from '../config-provider';
+import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 import useBreakpoint from '../grid/hooks/useBreakpoint';
 
 export interface PaginationProps {

@@ -1,5 +1,5 @@
-import * as React from './node_modules/react';
-import { ConfigContext } from '../config-provider';
+import * as React from 'react';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 
 interface BreadcrumbSeparatorInterface extends React.FC {
   __ANT_BREADCRUMB_SEPARATOR: boolean;

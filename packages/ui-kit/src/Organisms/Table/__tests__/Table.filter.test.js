@@ -5,7 +5,7 @@ import Table from '..';
 import Input from '../../input';
 import Tooltip from '../../tooltip';
 import Button from '../../button';
-import ConfigProvider from '../../config-provider';
+import ConfigProvider from '../../../Atoms/Providers/ConfigProvider';
 
 // https://github.com/Semantic-Org/Semantic-UI-React/blob/72c45080e4f20b531fda2e3e430e384083d6766b/test/specs/modules/Dropdown/Dropdown-test.js#L73
 const nativeEvent = { nativeEvent: { stopImmediatePropagation: () => {} } };

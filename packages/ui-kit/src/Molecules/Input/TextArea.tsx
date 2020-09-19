@@ -3,7 +3,7 @@ import RcTextArea, { TextAreaProps as RcTextAreaProps, ResizableTextArea } from 
 import omit from 'omit.js';
 import classNames from 'classnames';
 import ClearableLabeledInput from './ClearableLabeledInput';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import { fixControlledValue, resolveOnChange } from './Input';
 
 export interface TextAreaProps extends RcTextAreaProps {

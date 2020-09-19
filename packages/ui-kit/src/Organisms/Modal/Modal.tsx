@@ -8,8 +8,8 @@ import useModal from './useModal';
 import { getConfirmLocale } from './locale';
 import Button from '../button';
 import { LegacyButtonType, ButtonProps, convertLegacyProps } from '../button/button';
-import LocaleReceiver from '../locale-provider/LocaleReceiver';
-import { ConfigContext } from '../config-provider';
+import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 
 let mousePosition: { x: number; y: number } | null;
 export const destroyFns: Array<() => void> = [];

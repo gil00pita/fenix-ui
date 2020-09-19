@@ -1,10 +1,10 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
-import { tuple } from '../_util/type';
+import { tuple } from '@fenix-ui/utils/lib/type';
 import { InputProps, getInputClassName } from './Input';
-import { SizeType } from '../config-provider/SizeContext';
-import { cloneElement } from '../_util/reactNode';
+import { SizeType } from '../../Atoms/Providers/ConfigProvider/SizeContext';
+import { cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 const ClearableInputType = tuple('text', 'input');
 

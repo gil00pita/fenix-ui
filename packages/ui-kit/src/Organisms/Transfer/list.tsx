@@ -16,7 +16,7 @@ import {
 import Search from './search';
 import DefaultListBody, { TransferListBodyProps, OmitProps } from './ListBody';
 import { PaginationType } from './interface';
-import { isValidElement } from '../_util/reactNode';
+import { isValidElement } from '@fenix-ui/utils/lib/reactNode';
 
 const defaultRender = () => null;
 

@@ -1,13 +1,13 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import RowContext from './RowContext';
-import { tuple } from '../_util/type';
+import { tuple } from '@fenix-ui/utils/lib/type';
 import ResponsiveObserve, {
   Breakpoint,
   ScreenMap,
   responsiveArray,
-} from '../_util/responsiveObserve';
+} from '@fenix-ui/utils/lib/responsiveObserve';
 
 const RowAligns = tuple('top', 'middle', 'bottom', 'stretch');
 const RowJustify = tuple('start', 'end', 'center', 'space-around', 'space-between');

@@ -4,15 +4,15 @@ import omit from 'omit.js';
 import CloseOutlined from '@ant-design/icons/CloseOutlined';
 
 import CheckableTag from './CheckableTag';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 import {
   PresetColorTypes,
   PresetStatusColorTypes,
   PresetColorType,
   PresetStatusColorType,
-} from '../_util/colors';
-import Wave from '../_util/wave';
-import { LiteralUnion } from '../_util/type';
+} from '@fenix-ui/utils/lib/colors';
+import Wave from '@fenix-ui/utils/lib/wave';
+import { LiteralUnion } from '@fenix-ui/utils/lib/type';
 
 export { CheckableTagProps } from './CheckableTag';
 

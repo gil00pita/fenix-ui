@@ -1,9 +1,9 @@
-import * as React from './node_modules/react';
-import classNames from './node_modules/classnames';
-import RcCheckbox from './node_modules/rc-checkbox';
+import * as React from 'react';
+import classNames from 'classnames';
+import RcCheckbox from 'rc-checkbox';
 import CheckboxGroup, { GroupContext } from './Group';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import devWarning from '../_util/devWarning';
+import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 export interface AbstractCheckboxProps<T> {
   prefixCls?: string;

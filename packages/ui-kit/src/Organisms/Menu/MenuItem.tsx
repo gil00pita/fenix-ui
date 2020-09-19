@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import MenuContext, { MenuContextProps } from './MenuContext';
 import Tooltip, { TooltipProps } from '../Atoms/Tooltip';
 import { SiderContext, SiderContextProps } from '../layout/Sider';
-import { isValidElement } from '../_util/reactNode';
+import { isValidElement } from '@fenix-ui/utils/lib/reactNode';
 
 export interface MenuItemProps extends Omit<RcMenuItemProps, 'title'> {
   icon?: React.ReactNode;

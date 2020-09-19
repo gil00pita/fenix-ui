@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 import PageHeader from '..';
-import ConfigProvider from '../../config-provider';
+import ConfigProvider from '../../../Atoms/Providers/ConfigProvider';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 

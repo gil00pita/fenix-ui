@@ -5,7 +5,7 @@ import RcHandle from 'rc-slider/lib/Handle';
 import classNames from 'classnames';
 import { TooltipPlacement } from '../Atoms/Tooltip';
 import SliderTooltip from './SliderTooltip';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 
 export interface SliderMarks {
   [key: number]:

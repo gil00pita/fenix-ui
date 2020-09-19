@@ -4,10 +4,10 @@ import classNames from 'classnames';
 import { MotionType } from 'rc-trigger/lib/interface';
 import SubMenu from './SubMenu';
 import Item from './MenuItem';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import devWarning from '../_util/devWarning';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 import { SiderContext, SiderContextProps } from '../layout/Sider';
-import collapseMotion from '../_util/motion';
+import collapseMotion from '@fenix-ui/utils/lib/motion';
 import MenuContext, { MenuTheme } from './MenuContext';
 
 export { MenuItemGroupProps } from 'rc-menu';

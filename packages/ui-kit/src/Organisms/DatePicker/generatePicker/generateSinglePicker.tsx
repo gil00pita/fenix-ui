@@ -8,10 +8,10 @@ import { PickerMode } from 'rc-picker/lib/interface';
 import { GenerateConfig } from 'rc-picker/lib/generate/index';
 import enUS from '../locale/en_US';
 import { getPlaceholder } from '../util';
-import devWarning from '../../_util/devWarning';
-import { ConfigContext, ConfigConsumerProps } from '../../config-provider';
-import LocaleReceiver from '../../locale-provider/LocaleReceiver';
-import SizeContext from '../../config-provider/SizeContext';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
+import { ConfigContext, ConfigConsumerProps } from '../../../Atoms/Providers/ConfigProvider';
+import LocaleReceiver from '../../../Atoms/Providers/LocaleProvider/LocaleReceiver';
+import SizeContext from '../../../Atoms/Providers/ConfigProvider/SizeContext';
 import {
   PickerProps,
   PickerLocale,

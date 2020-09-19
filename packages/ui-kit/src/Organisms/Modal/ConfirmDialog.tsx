@@ -2,7 +2,7 @@ import * as React from 'react';
 import classNames from 'classnames';
 import Dialog, { ModalFuncProps } from './Modal';
 import ActionButton from './ActionButton';
-import devWarning from '../_util/devWarning';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 interface ConfirmDialogProps extends ModalFuncProps {
   afterClose?: () => void;

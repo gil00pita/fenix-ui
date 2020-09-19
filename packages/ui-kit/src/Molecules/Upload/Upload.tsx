@@ -1,6 +1,6 @@
-import * as React from './node_modules/react';
-import RcUpload from './node_modules/rc-upload';
-import classNames from './node_modules/classnames';
+import * as React from 'react';
+import RcUpload from 'rc-upload';
+import classNames from 'classnames';
 import Dragger from './Dragger';
 import UploadList from './UploadList';
 import {
@@ -14,10 +14,10 @@ import {
   UploadListType,
 } from './interface';
 import { T, fileToObject, getFileItem, removeFileItem } from './utils';
-import LocaleReceiver from '../locale-provider/LocaleReceiver';
+import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
 import defaultLocale from '../locale/default';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import devWarning from '../_util/devWarning';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 export { UploadProps };
 

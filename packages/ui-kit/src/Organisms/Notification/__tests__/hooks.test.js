@@ -2,7 +2,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import notification from '..';
-import ConfigProvider from '../../config-provider';
+import ConfigProvider from '../../../Atoms/Providers/ConfigProvider';
 
 describe('notification.hooks', () => {
   beforeAll(() => {

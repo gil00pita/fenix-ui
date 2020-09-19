@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import Radio from './radio';
 import { RadioGroupProps, RadioChangeEvent, RadioGroupButtonStyle } from './interface';
-import { ConfigContext } from '../config-provider';
-import SizeContext from '../config-provider/SizeContext';
+import { ConfigContext } from '../Providers/ConfigProvider';
+import SizeContext from '../Providers/ConfigProvider/SizeContext';
 import { RadioGroupContextProvider } from './context';
 
 const RadioGroup = React.forwardRef<unknown, RadioGroupProps>((props, ref) => {

@@ -2,8 +2,8 @@ import * as React from 'react';
 import { ModalFuncProps } from '../Modal';
 import ConfirmDialog from '../ConfirmDialog';
 import defaultLocale from '../../locale/default';
-import LocaleReceiver from '../../locale-provider/LocaleReceiver';
-import { ConfigContext } from '../../config-provider';
+import LocaleReceiver from '../../../Atoms/Providers/LocaleProvider/LocaleReceiver';
+import { ConfigContext } from '../../../Atoms/Providers/ConfigProvider';
 
 export interface HookModalProps {
   afterClose: () => void;

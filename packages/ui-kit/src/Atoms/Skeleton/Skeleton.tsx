@@ -1,8 +1,8 @@
-import * as React from './node_modules/react';
-import classNames from './node_modules/classnames';
+import * as React from 'react';
+import classNames from 'classnames';
 import Title, { SkeletonTitleProps } from './Title';
 import Paragraph, { SkeletonParagraphProps } from './Paragraph';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
 import Element from './Element';
 import SkeletonAvatar, { AvatarProps } from './Avatar';
 import SkeletonButton from './Button';

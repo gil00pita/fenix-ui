@@ -2,8 +2,8 @@ import React from 'react';
 import { mount, render } from 'enzyme';
 import Table from '..';
 import Checkbox from '../../checkbox';
-import { resetWarned } from '../../_util/devWarning';
-import ConfigProvider from '../../config-provider';
+import { resetWarned } from '@fenix-ui/utils/lib/devWarning';
+import ConfigProvider from '../../../Atoms/Providers/ConfigProvider';
 
 describe('Table.rowSelection', () => {
   const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});

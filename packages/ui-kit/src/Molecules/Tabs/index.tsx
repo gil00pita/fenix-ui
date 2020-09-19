@@ -1,14 +1,14 @@
-import * as React from './node_modules/react';
-import RcTabs, { TabPane, TabsProps as RcTabsProps, TabPaneProps } from './node_modules/rc-tabs';
-import { EditableConfig } from './node_modules/rc-tabs/lib/interface';
-import classNames from './node_modules/classnames';
-import EllipsisOutlined from './node_modules/@ant-design/icons/EllipsisOutlined';
-import PlusOutlined from './node_modules/@ant-design/icons/PlusOutlined';
-import CloseOutlined from './node_modules/@ant-design/icons/CloseOutlined';
+import * as React from 'react';
+import RcTabs, { TabPane, TabsProps as RcTabsProps, TabPaneProps } from 'rc-tabs';
+import { EditableConfig } from 'rc-tabs/lib/interface';
+import classNames from 'classnames';
+import EllipsisOutlined from '@ant-design/icons/EllipsisOutlined';
+import PlusOutlined from '@ant-design/icons/PlusOutlined';
+import CloseOutlined from '@ant-design/icons/CloseOutlined';
 
-import devWarning from '../_util/devWarning';
-import { ConfigContext } from '../config-provider';
-import { SizeType } from '../config-provider/SizeContext';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import { SizeType } from '../../Atoms/Providers/ConfigProvider/SizeContext';
 
 export type TabsType = 'line' | 'card' | 'editable-card';
 export type TabsPosition = 'top' | 'right' | 'bottom' | 'left';

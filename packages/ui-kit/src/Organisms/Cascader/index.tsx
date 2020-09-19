@@ -11,11 +11,11 @@ import RedoOutlined from '@ant-design/icons/RedoOutlined';
 import LeftOutlined from '@ant-design/icons/LeftOutlined';
 
 import Input from '../input';
-import { ConfigConsumer, ConfigConsumerProps, RenderEmptyHandler } from '../config-provider';
-import LocaleReceiver from '../locale-provider/LocaleReceiver';
-import devWarning from '../_util/devWarning';
-import SizeContext, { SizeType } from '../config-provider/SizeContext';
-import { replaceElement } from '../_util/reactNode';
+import { ConfigConsumer, ConfigConsumerProps, RenderEmptyHandler } from '../../Atoms/Providers/ConfigProvider';
+import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
+import SizeContext, { SizeType } from '../../Atoms/Providers/ConfigProvider/SizeContext';
+import { replaceElement } from '@fenix-ui/utils/lib/reactNode';
 
 export interface CascaderOptionType {
   value?: string | number;

@@ -3,7 +3,7 @@ import { render, mount } from 'enzyme';
 import Popover from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import { sleep } from '../../../tests/utils';
-import ConfigProvider from '../../config-provider';
+import ConfigProvider from '../../../Atoms/Providers/ConfigProvider';
 
 describe('Popover', () => {
   mountTest(Popover);

@@ -11,10 +11,10 @@ import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
 import Animate from 'rc-animate';
 import classNames from 'classnames';
 
-import { ConfigContext } from '../config-provider';
-import getDataOrAriaProps from '../_util/getDataOrAriaProps';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
+import getDataOrAriaProps from '@fenix-ui/utils/lib/getDataOrAriaProps';
 import ErrorBoundary from './ErrorBoundary';
-import { replaceElement } from '../_util/reactNode';
+import { replaceElement } from '@fenix-ui/utils/lib/reactNode';
 
 export interface AlertProps {
   /**

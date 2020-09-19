@@ -1,6 +1,6 @@
-import * as React from './node_modules/react';
-import classNames from './node_modules/classnames';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import * as React from 'react';
+import classNames from 'classnames';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 
 export interface GroupProps {
   className?: string;

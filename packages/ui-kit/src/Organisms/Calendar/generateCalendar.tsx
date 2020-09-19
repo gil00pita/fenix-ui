@@ -10,9 +10,9 @@ import {
   PickerPanelDateProps as RCPickerPanelDateProps,
   PickerPanelTimeProps as RCPickerPanelTimeProps,
 } from 'rc-picker/lib/PickerPanel';
-import LocaleReceiver from '../locale-provider/LocaleReceiver';
+import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
 import enUS from './locale/en_US';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 import CalendarHeader from './Header';
 
 type InjectDefaultProps<Props> = Omit<

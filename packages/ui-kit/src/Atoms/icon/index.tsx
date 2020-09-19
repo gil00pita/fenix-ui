@@ -1,4 +1,4 @@
-import devWarning from '../_util/devWarning';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 const Icon = () => {
   devWarning(false, 'Icon', 'Empty Icon');

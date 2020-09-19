@@ -4,7 +4,7 @@ import CheckOutlined from '@ant-design/icons/CheckOutlined';
 import CloseOutlined from '@ant-design/icons/CloseOutlined';
 import classNames from 'classnames';
 
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 
 export interface StepsProps {
   type?: 'default' | 'navigation';

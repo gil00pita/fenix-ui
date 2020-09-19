@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import RowContext from './RowContext';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 
 // https://github.com/ant-design/ant-design/issues/14324
 type ColSpanType = number | string;

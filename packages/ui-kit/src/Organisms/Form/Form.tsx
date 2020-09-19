@@ -4,11 +4,11 @@ import FieldForm, { List } from 'rc-field-form';
 import { FormProps as RcFormProps } from 'rc-field-form/lib/Form';
 import { ValidateErrorEntity } from 'rc-field-form/lib/interface';
 import { ColProps } from '../grid/col';
-import { ConfigContext, ConfigConsumerProps } from '../config-provider';
+import { ConfigContext, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import { FormContext } from './context';
 import { FormLabelAlign } from './interface';
 import useForm, { FormInstance } from './hooks/useForm';
-import SizeContext, { SizeType, SizeContextProvider } from '../config-provider/SizeContext';
+import SizeContext, { SizeType, SizeContextProvider } from '../../Atoms/Providers/ConfigProvider/SizeContext';
 
 export type FormLayout = 'horizontal' | 'inline' | 'vertical';
 

@@ -3,7 +3,7 @@ import InternalForm, { useForm, FormInstance, FormProps } from './Form';
 import Item, { FormItemProps } from './FormItem';
 import List from './FormList';
 import { FormProvider } from './context';
-import devWarning from '../_util/devWarning';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 type InternalForm = typeof InternalForm;
 interface Form extends InternalForm {

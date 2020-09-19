@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import LocaleReceiver from '../locale-provider/LocaleReceiver';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
+import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
 import DefaultEmptyImg from './empty';
 import SimpleEmptyImg from './simple';
 

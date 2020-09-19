@@ -1,12 +1,12 @@
-import * as React from './node_modules/react';
-import RcSwitch from './node_modules/rc-switch';
-import classNames from './node_modules/classnames';
-import LoadingOutlined from './node_modules/@ant-design/icons/LoadingOutlined';
+import * as React from 'react';
+import RcSwitch from 'rc-switch';
+import classNames from 'classnames';
+import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 
-import Wave from '../_util/wave';
-import { ConfigContext } from '../config-provider';
-import SizeContext from '../config-provider/SizeContext';
-import devWarning from '../_util/devWarning';
+import Wave from '@fenix-ui/utils/lib/wave';
+import { ConfigContext } from '../Providers/ConfigProvider';
+import SizeContext from '../Providers/ConfigProvider/SizeContext';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 export type SwitchSize = 'small' | 'default';
 export type SwitchChangeEventHandler = (checked: boolean, event: MouseEvent) => void;

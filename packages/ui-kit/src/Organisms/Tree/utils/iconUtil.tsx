@@ -6,7 +6,7 @@ import MinusSquareOutlined from '@ant-design/icons/MinusSquareOutlined';
 import PlusSquareOutlined from '@ant-design/icons/PlusSquareOutlined';
 import CaretDownFilled from '@ant-design/icons/CaretDownFilled';
 import { AntTreeNodeProps } from '../Tree';
-import { isValidElement, cloneElement } from '../../_util/reactNode';
+import { isValidElement, cloneElement } from '@fenix-ui/utils/lib/reactNode';
 
 export default function renderSwitcherIcon(
   prefixCls: string,

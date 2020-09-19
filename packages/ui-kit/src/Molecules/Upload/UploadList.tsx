@@ -1,20 +1,20 @@
-import * as React from './node_modules/react';
-import Animate from './node_modules/rc-animate';
-import classNames from './node_modules/classnames';
-import LoadingOutlined from './node_modules/@ant-design/icons/LoadingOutlined';
-import PaperClipOutlined from './node_modules/@ant-design/icons/PaperClipOutlined';
-import PictureTwoTone from './node_modules/@ant-design/icons/PictureTwoTone';
-import FileTwoTone from './node_modules/@ant-design/icons/FileTwoTone';
-import EyeOutlined from './node_modules/@ant-design/icons/EyeOutlined';
-import DeleteOutlined from './node_modules/@ant-design/icons/DeleteOutlined';
-import DownloadOutlined from './node_modules/@ant-design/icons/DownloadOutlined';
+import * as React from 'react';
+import Animate from 'rc-animate';
+import classNames from 'classnames';
+import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
+import PaperClipOutlined from '@ant-design/icons/PaperClipOutlined';
+import PictureTwoTone from '@ant-design/icons/PictureTwoTone';
+import FileTwoTone from '@ant-design/icons/FileTwoTone';
+import EyeOutlined from '@ant-design/icons/EyeOutlined';
+import DeleteOutlined from '@ant-design/icons/DeleteOutlined';
+import DownloadOutlined from '@ant-design/icons/DownloadOutlined';
 
-import { cloneElement, isValidElement } from '../_util/reactNode';
+import { cloneElement, isValidElement } from '@fenix-ui/utils/lib/reactNode';
 import { UploadListProps, UploadFile, UploadListType } from './interface';
 import { previewImage, isImageUrl } from './utils';
 import Tooltip from '../Atoms/Tooltip';
 import Progress from '../progress';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import Button, { ButtonProps } from '../button';
 
 export default class UploadList extends React.Component<UploadListProps, any> {

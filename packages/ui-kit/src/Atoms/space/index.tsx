@@ -1,8 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import toArray from 'rc-util/lib/Children/toArray';
-import { ConfigConsumerProps, ConfigContext } from '../config-provider';
-import { SizeType } from '../config-provider/SizeContext';
+import { ConfigConsumerProps, ConfigContext } from '../Providers/ConfigProvider';
+import { SizeType } from '../Providers/ConfigProvider/SizeContext';
 
 export interface SpaceProps {
   prefixCls?: string;

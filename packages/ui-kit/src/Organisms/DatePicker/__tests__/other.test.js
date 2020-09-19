@@ -2,8 +2,8 @@ import React from 'react';
 import { mount, render } from 'enzyme';
 import moment from 'moment';
 import DatePicker from '..';
-import LocaleProvider from '../../locale-provider';
-import locale from '../../locale-provider/zh_CN';
+import LocaleProvider from '../../../Atoms/Providers/LocaleProvider';
+import locale from '../../../Atoms/Providers/LocaleProvider/zh_CN';
 
 const { MonthPicker, WeekPicker } = DatePicker;
 

@@ -3,12 +3,12 @@ import classNames from 'classnames';
 import List, { TransferListProps } from './list';
 import Operation from './operation';
 import Search from './search';
-import LocaleReceiver from '../locale-provider/LocaleReceiver';
+import LocaleReceiver from '../../Atoms/Providers/LocaleProvider/LocaleReceiver';
 import defaultLocale from '../locale/default';
-import { ConfigConsumer, ConfigConsumerProps, RenderEmptyHandler } from '../config-provider';
+import { ConfigConsumer, ConfigConsumerProps, RenderEmptyHandler } from '../../Atoms/Providers/ConfigProvider';
 import { TransferListBodyProps } from './ListBody';
 import { PaginationType } from './interface';
-import devWarning from '../_util/devWarning';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 
 export { TransferListProps } from './list';
 export { TransferOperationProps } from './operation';

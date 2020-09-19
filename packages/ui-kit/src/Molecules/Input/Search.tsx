@@ -5,9 +5,9 @@ import SearchOutlined from '@ant-design/icons/SearchOutlined';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 import Input, { InputProps } from './Input';
 import Button from '../button';
-import SizeContext, { SizeType } from '../config-provider/SizeContext';
-import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
-import { cloneElement, replaceElement } from '../_util/reactNode';
+import SizeContext, { SizeType } from '../../Atoms/Providers/ConfigProvider/SizeContext';
+import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProviderider';
+import { cloneElement, replaceElement } from '@fenix-ui/utils/lib/reactNode';
 
 export interface SearchProps extends InputProps {
   inputPrefixCls?: string;

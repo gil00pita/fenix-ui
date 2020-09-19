@@ -6,10 +6,10 @@ import { TableProps as RcTableProps, INTERNAL_HOOKS } from 'rc-table/lib/Table';
 import { convertChildrenToColumns } from 'rc-table/lib/hooks/useColumns';
 import Spin, { SpinProps } from '../spin';
 import Pagination from '../pagination';
-import { ConfigContext } from '../config-provider/context';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider/context';
 import usePagination, { DEFAULT_PAGE_SIZE, getPaginationParam } from './hooks/usePagination';
 import useLazyKVMap from './hooks/useLazyKVMap';
-import { Breakpoint } from '../_util/responsiveObserve';
+import { Breakpoint } from '@fenix-ui/utils/lib/responsiveObserve';
 import {
   TableRowSelection,
   GetRowKey,
@@ -31,12 +31,12 @@ import useSorter, { getSortData, SortState } from './hooks/useSorter';
 import useFilter, { getFilterData, FilterState } from './hooks/useFilter';
 import useTitleColumns from './hooks/useTitleColumns';
 import renderExpandIcon from './ExpandIcon';
-import scrollTo from '../_util/scrollTo';
+import scrollTo from '@fenix-ui/utils/lib/scrollTo';
 import defaultLocale from '../locale/en_US';
-import SizeContext, { SizeType } from '../config-provider/SizeContext';
+import SizeContext, { SizeType } from '../../Atoms/Providers/ConfigProvider/SizeContext';
 import Column from './Column';
 import ColumnGroup from './ColumnGroup';
-import devWarning from '../_util/devWarning';
+import devWarning from '@fenix-ui/utils/lib/devWarning';
 import useBreakpoint from '../grid/hooks/useBreakpoint';
 
 export { ColumnsType, TablePaginationConfig };

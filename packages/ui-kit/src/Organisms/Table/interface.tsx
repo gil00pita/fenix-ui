@@ -6,9 +6,9 @@ import {
 } from 'rc-table/lib/interface';
 import { CheckboxProps } from '../checkbox';
 import { PaginationProps } from '../pagination';
-import { Breakpoint } from '../_util/responsiveObserve';
+import { Breakpoint } from '@fenix-ui/utils/lib/responsiveObserve';
 import { INTERNAL_SELECTION_ITEM } from './hooks/useSelection';
-import { tuple } from '../_util/type';
+import { tuple } from '@fenix-ui/utils/lib/type';
 // import { TableAction } from './Table';
 
 export { GetRowKey, ExpandableConfig };

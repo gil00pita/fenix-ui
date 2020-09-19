@@ -1,6 +1,6 @@
-import * as React from './node_modules/react';
-import { Circle as RCCircle } from './node_modules/rc-progress';
-import classNames from './node_modules/classnames';
+import * as React from 'react';
+import { Circle as RCCircle } from 'rc-progress';
+import classNames from 'classnames';
 import { validProgress } from './utils';
 import { ProgressProps } from './progress';
 

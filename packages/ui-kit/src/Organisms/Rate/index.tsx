@@ -3,7 +3,7 @@ import RcRate from 'rc-rate';
 import StarFilled from '@ant-design/icons/StarFilled';
 
 import Tooltip from '../Atoms/Tooltip';
-import { ConfigContext } from '../config-provider';
+import { ConfigContext } from '../../Atoms/Providers/ConfigProvider';
 
 export interface RateProps {
   prefixCls?: string;
