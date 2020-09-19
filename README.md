@@ -136,75 +136,75 @@ Support for Yarn Workspaces was added by:
 
 ### Atoms
 
-- [-] Affix
+- [ ] Affix
 - [x] Avatar
-- [-] Badge
-- [-] Checkbox
+- [ ] Badge
+- [ ] Checkbox
 - [x] Divider
 - [x] Icons
-- [-] Progress
-- [-] Skeleton
+- [ ] Progress
+- [ ] Skeleton
 - [x] Tooltip
 - [x] Typography
 - [x] Palette
-- [-] Radio
+- [ ] Radio
 - [x] Themes
 - [x] GlobalStyles
-- [-] Switch
-- [-] Space
+- [ ] Switch
+- [ ] Space
 
 ### Molecules
 
-- [-] Anchor
-- [-] Breadcrumb
-- [-] BackTop
+- [ ] Anchor
+- [ ] Breadcrumb
+- [ ] BackTop
 - [x] Button
-- [-] Charts
-- [-] Empty Spaces
-- [-] Input
-- [-] InputNumber
-- [-] PageHeader
-- [-] Pagination
-- [-] Slider
-- [-] Steps
-- [-] Tabs
-- [-] Upload
-- [-] Grid
-- [-] Dropdown Button
-- [-] Dropdown Select
-- [-] Layout
-- [-] Tag
+- [ ] Charts
+- [ ] Empty Spaces
+- [ ] Input
+- [ ] InputNumber
+- [ ] PageHeader
+- [ ] Pagination
+- [ ] Slider
+- [ ] Steps
+- [ ] Tabs
+- [ ] Upload
+- [ ] Grid
+- [ ] Dropdown Button
+- [ ] Dropdown Select
+- [ ] Layout
+- [ ] Tag
 
 ### Organisms
 
-- [-] Alert
-- [-] AutoComplete
-- [-] Calendar
-- [-] Card
-- [-] Caousel
-- [-] Cascader
-- [-] Collapse
-- [-] Comment
-- [-] DatePicker
-- [-] Descriptions
-- [-] Drawer
-- [-] Form
-- [-] Items Groups
-- [-] List
-- [-] Mentions Field
-- [-] Menu
-- [-] Message
-- [-] Modal
-- [-] Notification (Toasts)
-- [-] Pop confirm
-- [-] Popover
-- [-] Rate
-- [-] Result
-- [-] Spin
-- [-] Statistic (Stats)
-- [-] Table
-- [-] Timeline
-- [-] TimePicker
-- [-] Transfer
-- [-] Tree
-- [-] TreeSelect
+- [ ] Alert
+- [ ] AutoComplete
+- [ ] Calendar
+- [ ] Card
+- [ ] Caousel
+- [ ] Cascader
+- [ ] Collapse
+- [ ] Comment
+- [ ] DatePicker
+- [ ] Descriptions
+- [ ] Drawer
+- [ ] Form
+- [ ] Items Groups
+- [ ] List
+- [ ] Mentions Field
+- [ ] Menu
+- [ ] Message
+- [ ] Modal
+- [ ] Notification (Toasts)
+- [ ] Pop confirm
+- [ ] Popover
+- [ ] Rate
+- [ ] Result
+- [ ] Spin
+- [ ] Statistic (Stats)
+- [ ] Table
+- [ ] Timeline
+- [ ] TimePicker
+- [ ] Transfer
+- [ ] Tree
+- [ ] TreeSelect
