@@ -5,7 +5,7 @@ import ArrowRightOutlined from '@ant-design/icons/ArrowRightOutlined';
 import ResizeObserver from 'rc-resize-observer';
 import { ConfigConsumer, ConfigConsumerProps } from '../../Atoms/Providers/ConfigProvider';
 import { TagType } from '../Tag';
-import Breadcrumb, { BreadcrumbProps } from '../breadcrumb';
+import Breadcrumb, { BreadcrumbProps } from '../Breadcrumb';
 import Avatar, { AvatarProps } from '../../Atoms/Avatar';
 import TransButton from '@fenix-ui/utils/lib/transButton';
 import LocaleReceiver from '../../Atoms/Providers/LocaleProvider';
