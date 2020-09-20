@@ -1,6 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import RcCheckbox from 'rc-checkbox';
+import CheckboxNative from './CheckboxNative';
 import CheckboxGroup, { GroupContext } from './Group';
 import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
 import devWarning from '@fenix-ui/utils/lib/devWarning';
@@ -55,7 +55,7 @@ class Checkbox extends React.PureComponent<CheckboxProps, {}> {
 
   context: any;
 
-  private rcCheckbox: any;
+  private CheckboxNative: any;
 
   componentDidMount() {
     const { value } = this.props;
@@ -82,15 +82,15 @@ class Checkbox extends React.PureComponent<CheckboxProps, {}> {
   }
 
   saveCheckbox = (node: any) => {
-    this.rcCheckbox = node;
+    this.CheckboxNative = node;
   };
 
   focus() {
-    this.rcCheckbox.focus();
+    this.CheckboxNative.focus();
   }
 
   blur() {
-    this.rcCheckbox.blur();
+    this.CheckboxNative.blur();
   }
 
   renderCheckbox = ({ getPrefixCls, direction }: ConfigConsumerProps) => {
@@ -136,7 +136,7 @@ class Checkbox extends React.PureComponent<CheckboxProps, {}> {
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       >
-        <RcCheckbox
+        <CheckboxNative
           {...checkboxProps}
           prefixCls={prefixCls}
           className={checkboxClass}

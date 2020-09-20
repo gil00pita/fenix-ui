@@ -1,6 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import omit from 'omit.js.js';
+import omit from 'omit.js';
 import Checkbox, { CheckboxChangeEvent } from './Checkbox';
 import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
 

@@ -10,8 +10,12 @@ export default {
 
 export const CheckboxPlayground = () => {
   return (
+    <>
     <div>
-Checkbox
+      Checkbox
     </div>
+    <Checkbox
+    />
+    </>
   )
 };

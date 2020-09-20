@@ -4,7 +4,7 @@ import { withKnobs, text, boolean, number, color } from "@storybook/addon-knobs"
 
 
 export default {
-  title: "Atoms/Progres",
+  title: "Atoms/Progress",
   decorators: [withKnobs]
 };
 
