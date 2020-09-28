@@ -1,5 +1,5 @@
 import React from "react";
-import colors from ".";
+import color from ".";
 import { withKnobs, text, boolean, number, color, select } from "@storybook/addon-knobs";
 
 export default {

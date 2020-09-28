@@ -96,7 +96,9 @@ export const StyledInnerCheckbox = styled.span`
     animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
     border-left: 0;
     border-top: 0;
-    border: 2px solid #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
     content: ' ';
     display: table;
     height: 8px;

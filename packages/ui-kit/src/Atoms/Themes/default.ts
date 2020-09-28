@@ -1,4 +1,4 @@
-import { getColor } from '../Palette';
+import { getColor } from '../Color';
 import { fade, darken, lighten, hslToHex } from '@fenix-ui/utils/lib/colorManipulator';
 
 const fontSizeBase = 14;
