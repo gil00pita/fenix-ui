@@ -31,7 +31,8 @@
       "node",
       "core-js",
       "jest",
-      "webpack-env"
+      "webpack-env",
+      "src",
     ],
   },
   "exclude": [
