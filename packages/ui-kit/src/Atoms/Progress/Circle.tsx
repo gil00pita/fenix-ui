@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Circle as RCCircle } from 'rc-progress';
 import classNames from 'classnames';
 import { validProgress } from './utils';
-import { ProgressProps } from './progress';
+import { ProgressProps } from './Progress';
 
 interface CircleProps extends ProgressProps {
   prefixCls: string;

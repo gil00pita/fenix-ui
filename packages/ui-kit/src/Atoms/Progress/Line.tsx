@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { ProgressGradient, ProgressProps, StringGradients } from './progress';
+import { ProgressGradient, ProgressProps, StringGradients } from './Progress';
 
 import { validProgress } from './utils';
 

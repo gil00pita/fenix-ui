@@ -88,5 +88,8 @@
       "check-type-operator",
       "check-preblock"
     ]
-  }
+  },
+  "exclude": [
+    "**/*.stories.tsx"
+  ]
 }

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import { ProgressProps, ProgressSize } from './progress';
+import { ProgressProps, ProgressSize } from './Progress';
 
 interface StepsProps extends ProgressProps {
   steps: number;
