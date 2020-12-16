@@ -13,6 +13,7 @@ import Line from './Line';
 import Circle from './Circle';
 import Steps from './Steps';
 import { validProgress } from './utils';
+import { LabelWrapper } from './Progress.style';
 
 const ProgressTypes = tuple('line', 'circle', 'dashboard');
 export type ProgressType = typeof ProgressTypes[number];
@@ -111,9 +112,9 @@ export default class Progress extends React.Component<ProgressProps> {
       text = isLineType ? <CheckCircleFilled /> : <CheckOutlined />;
     }
     return (
-      <span className={`${prefixCls}-text`} title={typeof text === 'string' ? text : undefined}>
+      <LabelWrapper title={typeof text === 'string' ? text : undefined} type={type}>
         {text}
-      </span>
+      </LabelWrapper>
     );
   }
 

@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { Circle as RCCircle } from 'rc-progress';
+import { Circle as RCCircle } from './RCProgress';
 import classNames from 'classnames';
 import { validProgress } from './utils';
 import { ProgressProps } from './Progress';
+import { StyledCircleWrapper }from './Circle.style';
 
 interface CircleProps extends ProgressProps {
-  prefixCls: string;
   children: React.ReactNode;
   progressStatus: string;
 }
@@ -44,7 +44,6 @@ function getStrokeColor({ success, strokeColor, successPercent }: CircleProps) {
 
 const Circle: React.FC<CircleProps> = props => {
   const {
-    prefixCls,
     width,
     strokeWidth,
     trailColor,
@@ -53,13 +52,10 @@ const Circle: React.FC<CircleProps> = props => {
     gapDegree,
     type,
     children,
+    progressStatus,
   } = props;
-  const circleSize = width || 120;
-  const circleStyle = {
-    width: circleSize,
-    height: circleSize,
-    fontSize: circleSize * 0.15 + 6,
-  };
+  const circleSize = width || '120px';
+
   const circleWidth = strokeWidth || 6;
   const gapPos = gapPosition || (type === 'dashboard' && 'bottom') || 'top';
   // Support gapDeg = 0 when type = 'dashboard'
@@ -74,25 +70,21 @@ const Circle: React.FC<CircleProps> = props => {
   const strokeColor = getStrokeColor(props) as string | string[] | object;
   const isGradient = Object.prototype.toString.call(strokeColor) === '[object Object]';
 
-  const wrapperClassName = classNames(`${prefixCls}-inner`, {
-    [`${prefixCls}-circle-gradient`]: isGradient,
-  });
-
   return (
-    <div className={wrapperClassName} style={circleStyle}>
+    <StyledCircleWrapper circleSize={circleSize} isGradient={isGradient}>
       <RCCircle
+        progressStatus={progressStatus}
         percent={getPercentage(props)}
         strokeWidth={circleWidth}
         trailWidth={circleWidth}
         strokeColor={strokeColor}
         strokeLinecap={strokeLinecap}
         trailColor={trailColor}
-        prefixCls={prefixCls}
         gapDegree={gapDeg}
         gapPosition={gapPos}
       />
       {children}
-    </div>
+    </StyledCircleWrapper>
   );
 };
 
