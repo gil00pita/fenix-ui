@@ -110,7 +110,7 @@ const Circle: React.FC<ProgressProps> = ({
       const stroke =
         Object.prototype.toString.call(color) === '[object Object]'
           ? `url(#${prefixCls}-gradient-${gradientId})`
-          : '';
+          : color ;
       const pathStyles = getPathStyles(stackPtg, ptg, color, strokeWidth, gapDegree, gapPosition);
       stackPtg += ptg;
       return (

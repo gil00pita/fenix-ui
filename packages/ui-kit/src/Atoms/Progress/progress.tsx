@@ -1,10 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import omit from 'omit.js';
-import CloseOutlined from '@ant-design/icons/CloseOutlined';
-import CheckOutlined from '@ant-design/icons/CheckOutlined';
-import CheckCircleFilled from '@ant-design/icons/CheckCircleFilled';
-import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
+import { CheckCircle, CheckCircleOutline, CloseCircle, CloseCircleOutline } from '@fenix-ui/icons/mdc';
 
 import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
 import { tuple } from '@fenix-ui/utils/lib/type';
@@ -107,12 +104,16 @@ export default class Progress extends React.Component<ProgressProps> {
     if (format || (progressStatus !== 'exception' && progressStatus !== 'success')) {
       text = textFormatter(validProgress(percent), validProgress(successPercent));
     } else if (progressStatus === 'exception') {
-      text = isLineType ? <CloseCircleFilled /> : <CloseOutlined />;
+      text = isLineType ? <CloseCircle /> : <CloseCircleOutline />;
     } else if (progressStatus === 'success') {
-      text = isLineType ? <CheckCircleFilled /> : <CheckOutlined />;
+      text = isLineType ? <CheckCircle /> : <CheckCircleOutline />;
     }
     return (
-      <LabelWrapper title={typeof text === 'string' ? text : undefined} type={type}>
+      <LabelWrapper
+        title={typeof text === 'string' ? text : undefined}
+        type={type}
+        progressStatus={progressStatus}
+      >
         {text}
       </LabelWrapper>
     );
@@ -159,7 +160,12 @@ export default class Progress extends React.Component<ProgressProps> {
       );
     } else if (type === 'circle' || type === 'dashboard') {
       progress = (
-        <Circle {...this.props} prefixCls={prefixCls} progressStatus={progressStatus}>
+        <Circle
+          {...this.props}
+          prefixCls={prefixCls}
+          progressStatus={progressStatus}
+          strokeColor={strokeColor}
+        >
           {progressInfo}
         </Circle>
       );

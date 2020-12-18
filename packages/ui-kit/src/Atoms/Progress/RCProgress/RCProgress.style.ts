@@ -5,6 +5,7 @@ import reset from '../GlobalStyles/Reset';
 interface Styles {
   theme: DefaultTheme;
   progressStatus: string;
+  stroke: string;
 }
 
 const progressAppear = keyframes`
@@ -16,11 +17,11 @@ const progressAppear = keyframes`
   }
 `;
 
-const variantColor= ({ progressStatus, theme }: Styles) => {
+const variantColor= ({ stroke, progressStatus, theme }: Styles) => {
   let finalColor;
   switch (progressStatus) {
     case 'normal':
-      finalColor = theme.colors.error;
+      finalColor = stroke || theme.progress.progressDefaultColor;
       break;
     case 'exception':
       finalColor = theme.colors.error;
@@ -32,14 +33,14 @@ const variantColor= ({ progressStatus, theme }: Styles) => {
       finalColor = theme.colors.success;
       break;
     default:
-      finalColor = theme.colors.black;
+      finalColor = stroke || theme.progress.progressDefaultColor;
   }
   return finalColor;
 };
 
 export const StyledPath = styled.path`
   animation: ${progressAppear} 0.3s;
-  background-color:  ${(props: Styles) => variantColor(props)};
+  stroke:  ${(props: Styles) => variantColor(props)};
 `;
 
 export const StyledCircle = styled.svg`
