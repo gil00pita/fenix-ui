@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/indent */
-import styled, { DefaultTheme, keyframes, css } from 'styled-components';
-import reset from '../GlobalStyles/Reset';
+import styled from 'styled-components';
 
 interface Styles {
   isGradient?: boolean;
@@ -31,7 +30,7 @@ export const StyledCircleWrapper = styled.div`
   overflow: hidden;
   vertical-align: middle;
   background-color: transparent;
-  border-radius: ${({ theme }) => theme.progress.progressRadius}; /* @progress-radius; */
+  border-radius: ${({ theme }) => theme.progress.progressRadius};
   ${(props: Styles) => circleStyle(props)}
 `;
 

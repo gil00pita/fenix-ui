@@ -1,75 +1,74 @@
 /* eslint-disable @typescript-eslint/indent */
 import styled, { DefaultTheme, keyframes, css } from 'styled-components';
-import reset from '../GlobalStyles/Reset';
 import { ProgressType } from './Progress';
 
-interface ColorStyles {
-  theme: DefaultTheme;
-  progressStatus?: string;
-  color?: string;
-}
+
 interface Styles {
   isGradient?: boolean;
   circleSize?: string;
   progressStatus?: string;
   theme: DefaultTheme;
   type?: ProgressType;
-  color?: string;
+  strokeColor?: string;
 }
 
-const variantColor= ({ color, progressStatus, theme }: ColorStyles) => {
-  let finalColor;
+const labelWrapper: StyledFunction<Styles & React.HTMLProps<HTMLInputElement>> = styled.span
+
+const handleColorType = (progressStatus, strokeColor, theme) => {
+
   switch (progressStatus) {
     case 'normal':
-      finalColor = color || theme.font.textColorSecondary;
-      break;
+      return typeof strokeColor === 'object' ? strokeColor[Object.keys(strokeColor)[1]] : strokeColor ?? theme.font.textColorSecondary;
     case 'exception':
-      finalColor = theme.colors.error;
-      break;
+      return theme.colors.error;
     case 'active':
-      finalColor = theme.background.componentBackground;
-      break;
+      return theme.background.componentBackground;
     case 'success':
-      finalColor = theme.colors.success;
-      break;
+      return theme.colors.success;
     default:
-      finalColor = color || theme.font.textColorSecondary;
+      return typeof strokeColor === 'object' ? strokeColor[Object.keys(strokeColor)[1]] : strokeColor ?? theme.font.textColorSecondary;
   }
-  return finalColor;
 };
 
-const progressStyle = ({theme, color, progressStatus, type}: Styles) => {
-  if (type === 'line') {
+
+const progressStyle = (props: Styles) => {
+
+  const color = handleColorType(props.progressStatus, props.strokeColor, props.theme);
+  const fontSize = props.theme.progress.progressCircleTextFontSize;
+
+  if (props.type === 'line') {
     return `
+      color: ${color};
       display: inline-block;
-      width: 2em;
-      margin-left: 8px;
-      color: ${(props: Styles) => variantColor(props)};
-      font-size: ${({ theme }) => theme.progress.progressCircleTextFontSize};
+      font-size: ${fontSize};
       line-height: 1;
-      white-space: nowrap;
+      margin-left: 8px;
       text-align: left;
       vertical-align: middle;
+      white-space: nowrap;
+      width: 2em;
       word-break: normal;
     `
-  } else if (type === 'circle' || type === 'dashboard') {
+  } else if (props.type === 'circle' || props.type === 'dashboard') {
     return `
-      position: absolute;
-      top: 50%;
+      color: ${color};
+      font-size: ${fontSize};
       left: 50%;
-      width: 100%;
+      line-height: 1;
       margin: 0;
       padding: 0;
-      color: ${(props: Styles) => variantColor(props)};
-      font-size: ${({ theme }) => theme.progress.progressCircleTextFontSize};
-      line-height: 1;
-      white-space: normal;
+      position: absolute;
       text-align: center;
+      top: 50%;
       transform: translate(-50%, -50%);
+      white-space: normal;
+      width: 100%;
     `
   }
 }
 
-export const LabelWrapper = styled.span`
+
+export const LabelWrapper = labelWrapper`
   ${(props: Styles) => progressStyle(props)}
 `;
+

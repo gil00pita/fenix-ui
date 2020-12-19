@@ -1,0 +1,160 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["cypress", "filenames", "react"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "cypress/globals": true,
+    "es6": true,
+    "jest": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+  "globals": {
+    "__WEBPACKDEFINE__BUILT_AS_PRODUCTION": true
+  },
+  "rules": {
+    "complexity": ["warn", 10],
+    "dot-location": ["error", "property"],
+    "dot-notation": ["error"],
+    "func-style": ["error", "expression"],
+    "implicit-arrow-linebreak": "off",
+    "import/no-cycle": ["error", { "maxDepth": 2 }],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-named-as-default": ["off"],
+    "import/prefer-default-export": ["off"],
+    "indent": ["error", 2, {
+      "SwitchCase": 1
+    }],
+    "jsx-a11y/anchor-is-valid": ["off"],
+    "jsx-a11y/click-events-have-key-events": ["off"],
+    "jsx-a11y/no-static-element-interactions": ["off"],
+    "linebreak-style": ["error", "unix"],
+    "max-classes-per-file": ["error", 1],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignorePattern": "^import\\s.+\\sfrom\\s.+;$"
+      }
+    ],
+    "no-alert": ["error"],
+    "no-continue": ["off"],
+    "no-debugger": ["error"],
+    "no-eval": ["error"],
+    "no-labels": ["error"],
+    "no-lone-blocks": ["error"],
+    "no-new": ["error"],
+    "no-return-assign": ["error"],
+    "no-script-url": ["error"],
+    "no-tabs": ["error"],
+    "no-underscore-dangle": [
+      2,
+      {
+        "allowAfterThis": true
+      }
+    ],
+    "no-useless-call": ["error"],
+    "no-var": ["error"],
+    "no-void": ["error"],
+    "no-warning-comments": [
+      2,
+      {
+        "terms": ["fixme", "todo", "xxx"],
+        "location": "anywhere"
+      }
+    ],
+    "operator-linebreak": ["error", "after"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "react/forbid-elements": [
+      "error",
+      {
+        "forbid": [
+          {
+            "element": "h1",
+            "message": "Use Fenix-UI's <Typography> instead"
+          },
+          {
+            "element": "h2",
+            "message": "Use Fenix-UI's <Typography> instead"
+          },
+          {
+            "element": "h3",
+            "message": "Use Fenix-UI's <Typography> instead"
+          },
+          {
+            "element": "h4",
+            "message": "Use Fenix-UI's <Typography> instead"
+          },
+          {
+            "element": "h5",
+            "message": "Use Fenix-UI's <Typography> instead"
+          },
+          {
+            "element": "h6",
+            "message": "Use Fenix-UI's <Typography> instead"
+          },
+          {
+            "element": "p",
+            "message": "Use Fenix-UI's <Typography> instead"
+          },
+          {
+            "element": "img",
+            "message": "Use react-image's <Img>, with a loading view and fallback as desired"
+          }
+        ]
+      }
+    ],
+    "react/prefer-stateless-function": "off",
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": true
+      }
+    ],
+    "require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": false,
+          "ArrowFunctionExpression": true,
+          "FunctionExpression": true
+        }
+      }
+    ],
+    "sort-vars": [
+      "error",
+      {
+        "ignoreCase": true
+      }
+    ],
+    "valid-jsdoc": ["error"],
+    "yoda": [2, "always"]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.5.2"
+    },
+    "import/resolver": {
+      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+    }
+  }
+}

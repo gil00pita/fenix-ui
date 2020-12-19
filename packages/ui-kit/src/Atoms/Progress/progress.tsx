@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import omit from 'omit.js';
-import { CheckCircle, CheckCircleOutline, CloseCircle, CloseCircleOutline } from '@fenix-ui/icons/mdc';
+import { CheckCircle, Check, CloseCircle, Close } from '@fenix-ui/icons/mdc';
 
 import { ConfigConsumer, ConfigConsumerProps } from '../Providers/ConfigProvider';
 import { tuple } from '@fenix-ui/utils/lib/type';
@@ -87,7 +87,7 @@ export default class Progress extends React.Component<ProgressProps> {
   }
 
   renderProcessInfo(prefixCls: string, progressStatus: typeof ProgressStatuses[number]) {
-    const { showInfo, format, type, percent, success } = this.props;
+    const { showInfo, format, type, percent, success, strokeColor } = this.props;
     let { successPercent } = this.props;
     if (success && 'progress' in success) {
       devWarning(false, 'Progress', '`success.progress` is deprecated. Please use `success.percent` instead.');
@@ -104,15 +104,17 @@ export default class Progress extends React.Component<ProgressProps> {
     if (format || (progressStatus !== 'exception' && progressStatus !== 'success')) {
       text = textFormatter(validProgress(percent), validProgress(successPercent));
     } else if (progressStatus === 'exception') {
-      text = isLineType ? <CloseCircle /> : <CloseCircleOutline />;
+      text = isLineType ? <CloseCircle size="2rem"/> : <Close size="2rem"/>;
     } else if (progressStatus === 'success') {
-      text = isLineType ? <CheckCircle /> : <CheckCircleOutline />;
+      text = isLineType ? <CheckCircle size="2rem"/> : <Check size="2rem"/>;
     }
+
     return (
       <LabelWrapper
         title={typeof text === 'string' ? text : undefined}
         type={type}
         progressStatus={progressStatus}
+        strokeColor={strokeColor}
       >
         {text}
       </LabelWrapper>
