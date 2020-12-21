@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/indent */
-import styled, { DefaultTheme, keyframes, css } from 'styled-components';
+import styled from 'styled-components';
 import { ProgressType } from './Progress';
-
 
 interface Styles {
   isGradient?: boolean;
@@ -18,7 +17,7 @@ const handleColorType = (progressStatus, strokeColor, theme) => {
 
   switch (progressStatus) {
     case 'normal':
-      return typeof strokeColor === 'object' ? strokeColor[Object.keys(strokeColor)[1]] : strokeColor ?? theme.font.textColorSecondary;
+      return typeof strokeColor === 'object' ? strokeColor[Object.keys(strokeColor)[1]] : strokeColor ?? theme.progress.progressTextColor;
     case 'exception':
       return theme.colors.error;
     case 'active':
@@ -26,7 +25,7 @@ const handleColorType = (progressStatus, strokeColor, theme) => {
     case 'success':
       return theme.colors.success;
     default:
-      return typeof strokeColor === 'object' ? strokeColor[Object.keys(strokeColor)[1]] : strokeColor ?? theme.font.textColorSecondary;
+      return typeof strokeColor === 'object' ? strokeColor[Object.keys(strokeColor)[1]] : strokeColor ?? theme.progress.progressTextColor;
   }
 };
 
@@ -67,8 +66,59 @@ const progressStyle = (props: Styles) => {
   }
 }
 
-
 export const LabelWrapper = labelWrapper`
   ${(props: Styles) => progressStyle(props)}
 `;
+
+
+const div: StyledFunction<Styles & React.HTMLProps<HTMLInputElement>> = styled.div
+
+export const LineOuter = div`
+  display: inline-block;
+  width: 100%;
+  margin-right: 0;
+  padding-right: 0;
+`;
+
+export const LineInner = div`
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+  background-color: ${({ theme }) => theme.progress.progressRemainingColor};
+  border-radius: ${({ theme }) => theme.progress.progressRadius};
+  stroke: ${({ theme }) => theme.progress.progressDefaultColor};
+`;
+
+
+export const LineBG = div`
+  position: relative;
+  background-color: ${({ theme }) => theme.progress.progressDefaultColor};
+  border-radius: ${({ theme }) => theme.progress.progressRadius};
+  transition: all 0.4s ${({ theme }) => theme.animation.easeOutCirc} 0s;
+`;
+
+export const LineText = div`
+  display: inline-block;
+  width: 2em;
+  margin-left: 8px;
+  color: ${({ theme }) => theme.font.textColorSecondary};
+  font-size: ${({ theme }) => theme.progress.progressCircleTextFontSize};
+  line-height: 1;
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: middle;
+  word-break: normal;
+`;
+
+export const LineSuccessBG = div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: ${({ theme }) => theme.progress.progressDefaultColor};
+  border-radius: ${({ theme }) => theme.progress.progressRadius};
+  transition: all 0.4s ${({ theme }) => theme.animation.easeOutCirc} 0s;
+  `;
+  // background-color: ${({ theme }) => theme.colors.success};
 

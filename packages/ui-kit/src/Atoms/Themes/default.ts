@@ -594,7 +594,7 @@ const modal = {
 const progress = {
   progressDefaultColor: colors.processing,
   progressRemainingColor: background.backgroundColorBase,
-  progressTextColor: font.textColor,
+  progressTextColor: font.headingColor,
   progressRadius: 100,
   progressStepsItemBg: '#f3f3f3',
   progressTextFontSize: '1em',

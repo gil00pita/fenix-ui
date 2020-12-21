@@ -1,11 +1,10 @@
 import * as React from 'react';
 
 import { ProgressGradient, ProgressProps, StringGradients } from './Progress';
-
+import { LineBG, LineInner, LineOuter, LineSuccessBG } from './Progress.style';
 import { validProgress } from './utils';
 
 interface LineProps extends ProgressProps {
-  prefixCls: string;
   children: React.ReactNode;
 }
 
@@ -59,7 +58,6 @@ export const handleGradient = (strokeColor: ProgressGradient) => {
 
 const Line: React.FC<LineProps> = props => {
   const {
-    prefixCls,
     percent,
     strokeWidth,
     size,
@@ -124,16 +122,16 @@ const Line: React.FC<LineProps> = props => {
   }
   const successSegment =
     successPercent !== undefined ? (
-      <div className={`${prefixCls}-success-bg`} style={successPercentStyle} />
+      <LineSuccessBG style={successPercentStyle} />
     ) : null;
   return (
     <>
-      <div className={`${prefixCls}-outer`}>
-        <div className={`${prefixCls}-inner`} style={trailStyle}>
-          <div className={`${prefixCls}-bg`} style={percentStyle} />
+      <LineOuter>
+        <LineInner style={trailStyle}>
+          <LineBG style={percentStyle} />
           {successSegment}
-        </div>
-      </div>
+        </LineInner>
+      </LineOuter>
       {children}
     </>
   );

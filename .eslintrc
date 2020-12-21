@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "plugins": ["cypress", "filenames", "react"],
+  "plugins": ["cypress", "filenames", "react", "prettier", "jsx-a11y", "import", "@typescript-eslint"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -10,17 +10,30 @@
   },
   "env": {
     "browser": true,
-    "cypress/globals": true,
+    // "cypress/globals": true,
     "es6": true,
     "jest": true,
     "mocha": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "react-app", "prettier", "prettier/react", "plugin:@typescript-eslint/eslint-recommended", "plugin:@typescript-eslint/recommended"],
   "globals": {
-    "__WEBPACKDEFINE__BUILT_AS_PRODUCTION": true
+    "__WEBPACKDEFINE__BUILT_AS_PRODUCTION": true,
+    "expect": true,
+    "describe": true,
+    "it": true,
+    "fixture": true,
+    "test": true,
+    "jest": true,
+    "document": true,
+    "window": true,
+    "fetch": true,
+    "navigator": true
   },
   "rules": {
+    "space-before-function-paren": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     "complexity": ["warn", 10],
     "dot-location": ["error", "property"],
     "dot-notation": ["error"],
@@ -33,7 +46,16 @@
     "indent": ["error", 2, {
       "SwitchCase": 1
     }],
-    "jsx-a11y/anchor-is-valid": ["off"],
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "beforeSelfClosing": "always"
+      }
+    ],
     "jsx-a11y/click-events-have-key-events": ["off"],
     "jsx-a11y/no-static-element-interactions": ["off"],
     "linebreak-style": ["error", "unix"],
