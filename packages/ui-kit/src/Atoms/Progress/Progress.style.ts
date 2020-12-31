@@ -75,50 +75,51 @@ const div: StyledFunction<Styles & React.HTMLProps<HTMLInputElement>> = styled.d
 
 export const LineOuter = div`
   display: inline-block;
-  width: 100%;
   margin-right: 0;
+  margin-right: calc(-2em - 8px);
   padding-right: 0;
+  padding-right: calc(2em + 8px);
+  width: 100%;
 `;
 
 export const LineInner = div`
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  overflow: hidden;
-  vertical-align: middle;
   background-color: ${({ theme }) => theme.progress.progressRemainingColor};
-  border-radius: ${({ theme }) => theme.progress.progressRadius};
+  border-radius: ${({ theme }) => theme.progress.progressRadius}px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
   stroke: ${({ theme }) => theme.progress.progressDefaultColor};
+  vertical-align: middle;
+  width: 100%;
 `;
 
 
 export const LineBG = div`
-  position: relative;
   background-color: ${({ theme }) => theme.progress.progressDefaultColor};
-  border-radius: ${({ theme }) => theme.progress.progressRadius};
+  border-radius: ${({ theme }) => theme.progress.progressRadius}px;
+  position: relative;
   transition: all 0.4s ${({ theme }) => theme.animation.easeOutCirc} 0s;
 `;
 
 export const LineText = div`
-  display: inline-block;
-  width: 2em;
-  margin-left: 8px;
   color: ${({ theme }) => theme.font.textColorSecondary};
+  display: inline-block;
   font-size: ${({ theme }) => theme.progress.progressCircleTextFontSize};
   line-height: 1;
-  white-space: nowrap;
+  margin-left: 8px;
   text-align: left;
   vertical-align: middle;
+  white-space: nowrap;
+  width: 2em;
   word-break: normal;
 `;
 
 export const LineSuccessBG = div`
+  background-color: ${({ theme }) => theme.progress.progressDefaultColor};
+  border-radius: ${({ theme }) => theme.progress.progressRadius}px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  background-color: ${({ theme }) => theme.progress.progressDefaultColor};
-  border-radius: ${({ theme }) => theme.progress.progressRadius};
   transition: all 0.4s ${({ theme }) => theme.animation.easeOutCirc} 0s;
   `;
   // background-color: ${({ theme }) => theme.colors.success};
-
