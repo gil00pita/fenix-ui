@@ -19,10 +19,7 @@
     "sourceMap": true,
     "strict": true,
     "baseUrl": "./",
-    "paths": {
-      "antd": ["components/index.tsx"],
-      "antd/es/*": ["components/*"]
-    },
+    "paths": {},
     "strictNullChecks": true,
     "target": "es6",
     "skipLibCheck": true,
