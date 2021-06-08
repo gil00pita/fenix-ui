@@ -129,7 +129,7 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.1.0",
     "stylelint": "^13.13.1",
-    "typescript": "~4.3.2",
+    "typescript": "4.2.4",
     "xhr-mock": "^2.5.1",
     "xhr2": "^0.2.1",
     "yaml-front-matter": "^4.1.1"

@@ -51,9 +51,12 @@
     "terminal.ansiBrightBlue": "#57c7ff",
     "terminal.ansiBrightMagenta": "#ff6ac1",
     "terminal.ansiBrightCyan": "#9aedfe",
-    "terminal.ansiBrightWhite": "#eff0eb"
+    "terminal.ansiBrightWhite": "#eff0eb",
+    "editor.background": "#400000"
   },
   "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#7CB342",
+    "activityBar.activeBorder": "#7CB342",
     "list.activeSelectionForeground": "#7CB342",
     "list.inactiveSelectionForeground": "#7CB342",
     "list.highlightForeground": "#7CB342",
@@ -62,6 +65,7 @@
     "textLink.foreground": "#7CB342",
     "progressBar.background": "#7CB342",
     "pickerGroup.foreground": "#7CB342",
+    "tab.activeBorder": "#7CB342",
     "notificationLink.foreground": "#7CB342",
     "editorWidget.resizeBorder": "#7CB342",
     "editorWidget.border": "#7CB342",

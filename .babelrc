@@ -1,6 +1,7 @@
 {
   "presets": [
     ["react-app", { "flow": false, "typescript": true }],
+    ["@babel/plugin-proposal-private-property-in-object", { "loose": true }],
     "env"
   ],
   "plugins": [
