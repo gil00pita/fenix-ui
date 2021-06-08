@@ -61,8 +61,12 @@ jspm_packages/
 #Source files
 *.map
 
+#VS Code
+.vscode
+
 #Generated Icons files
 packages/icons-lib/icons/lib/
 packages/icons-lib/icon-gallery/public/
 packages/icons-lib/icons/src/icons/ant-design-icons
 packages/icons-lib/icons/src/icons/MaterialDesign-SVG
+
