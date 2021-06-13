@@ -63,6 +63,7 @@ jspm_packages/
 
 #VS Code
 .vscode
+.vscode/*
 
 #Generated Icons files
 packages/icons-lib/icons/lib/
