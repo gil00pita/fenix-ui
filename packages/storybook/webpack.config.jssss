@@ -1,5 +1,0 @@
-resolve: {
-  alias: {
-    '@fenix-ui/utils': path.resolve(__dirname, '../packages/utils')
-  }
-},

@@ -1,12 +1,15 @@
 {
   "presets": [
-    ["react-app", { "flow": false, "typescript": true }],
-    ["@babel/plugin-proposal-private-property-in-object", { "loose": true }],
-    "env"
+    ["@babel/preset-react", { "flow": false, "typescript": true, "loose": true}],
+    ["@babel/preset-typescript", { "loose": true }],
+    ["@babel/preset-env", { "loose": true }]
   ],
   "plugins": [
-      "transform-object-rest-spread",
-      "transform-react-jsx",
-      "@babel/plugin-transform-react-jsx"
+      ["@babel/transform-react-jsx", { "loose": true }],
+      ["@babel/plugin-proposal-decorators", { "legacy": true }],
+      ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+      ["@babel/proposal-object-rest-spread", { "loose": true }]
   ]
 }
+
+// IF Changed needs to add to the `packages/storybook/.storybook/main.js` file
