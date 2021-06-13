@@ -1,10 +1,6 @@
 /* eslint-disable @typescript-eslint/indent */
 import styled from 'styled-components';
 
-interface Styles {
-  children?: React.ReactNode;
-}
-
 const StyledAvatarGroup = styled.div`
   display: inline-flex;
 

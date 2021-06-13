@@ -1,16 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { withKnobs, text, boolean, number, color } from "@storybook/addon-knobs";
 import React, { useState } from 'react';
+import { withKnobs } from "@storybook/addon-knobs";
 import Affix from './Affix';
 import Button from '../../Molecules/Button';
 
-export default {
+const STORY_CONFIG = {
   title: "Atoms/Affix",
   decorators: [withKnobs]
 };
 
-
-export const AffixDemo: React.FC = () => {
+export const AffixComponent: React.FC = () => {
   const [top, setTop] = useState(10);
   const [bottom, setBottom] = useState(10);
 
@@ -31,3 +30,4 @@ export const AffixDemo: React.FC = () => {
   );
 };
 
+export default STORY_CONFIG;

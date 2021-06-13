@@ -52,7 +52,7 @@
     "terminal.ansiBrightMagenta": "#ff6ac1",
     "terminal.ansiBrightCyan": "#9aedfe",
     "terminal.ansiBrightWhite": "#eff0eb",
-    "editor.background": "#400000"
+    "editor.background": "#402000"
   },
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#7CB342",
@@ -98,7 +98,6 @@
     "terminal.ansiBrightBlue": "#57c7ff",
     "terminal.ansiBrightMagenta": "#ff6ac1",
     "terminal.ansiBrightCyan": "#9aedfe",
-    "terminal.ansiBrightWhite": "#eff0eb",
-    "editor.background": "#402000"
+    "terminal.ansiBrightWhite": "#eff0eb"
   },
 }
